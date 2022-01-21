@@ -1,29 +1,28 @@
 import React from "react";
-import Header from "../Header/Header";
-import Footer from "../Footer/Footer";
+import Header from "../components/Header/Header";
+import Footer from "../components/Footer/Footer";
 
 const ConfirmacionTransferencia = () => {
   return (
     <>
       <div className="container-transferencias">
         <Header />
+        <h2> HOLA USER</h2>
         <h2>TRANSFERENCIA</h2>
         <form className="info-container">
           <section className="info-cuenta-origen">
-            <p>SALDO DISPONIBLE</p>
-            <p>$20.000.00</p>
-            <p>CUENTA DE ORIGEN</p>
-            <p>***587852</p>
+            <p className="center-item">CONFIRMACION</p>
+            <p>PARA: USER_DESTINATARIO</p>
+            <p>DE: CUENTA AHORRO USER</p>
+            <p>MONTO 5.000.00</p>
+            <p>DESCRIPCION: COMIDA</p>
           </section>
-          <input placeholder="BENEFICIARIO"></input>
-          <input placeholder="CONCEPTO"></input>
-          <input placeholder="IMPORTE"></input>
         </form>
         <section className="botones">
-          <button className="boton-regresar" onClick={handleRegresar}>
+          <button className="boton-regresar">
             REGRESAR
           </button>
-          <button className="boton-confirmar" onClick={handleConfirmar}>
+          <button className="boton-confirmar">
             CONFIRMAR
           </button>
         </section>

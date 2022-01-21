@@ -1,11 +1,11 @@
 /* eslint-disable no-unused-vars */
-import React, {useState} from "react";
+import React from "react";
 import logoazul from "../../assets/CitiLogo-azul.png";
 import tamañoLetra from "../../assets/TamañoLetra-azul.png";
 
-const Sidebar = () => {
-  const [open, setOpen] = useState(false);
-  return (
+const Sidebar = ({open}) => {
+  
+  return open ? ( 
     <div id="sidebar">
       <ul>
         <li className="center-item">
@@ -22,7 +22,7 @@ const Sidebar = () => {
         <li className="btn-predefinida">PREDEFINIDA</li>
       </ul>
     </div>
-  );
+  ) : null
 };
 
 export default Sidebar;
