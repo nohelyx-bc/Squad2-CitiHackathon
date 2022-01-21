@@ -6,8 +6,8 @@ const AltaBeneficiario = () => {
   return (
     <>
       <Header />
-      <h1>HOLA USER!</h1>
-      <form action="">
+      <h2>HOLA USER!</h2>
+      <form action="" className="altaBeneficiario-form">
         <legend>AGREGAR CUENTAS A TERCEROS</legend>
         <label htmlFor="TipoDeCuenta">TIPO DE CUENTA</label>
         <input type="text" id="TipoDeCuenta" />
