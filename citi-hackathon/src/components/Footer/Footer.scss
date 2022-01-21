@@ -1,0 +1,14 @@
+@import "../../Styles/variables";
+footer{
+    display: flex;
+    background-color: $primary-dark;
+    justify-content: space-evenly;
+
+}
+.icon-footer{
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+
+}
