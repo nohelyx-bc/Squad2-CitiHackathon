@@ -15,7 +15,7 @@ const Home = ({dataUser}) => {
       <div className="container-predeterminado" >
         <Header />
         <div className="render">
-          <PrincipalVista />
+        <PrincipalVista userInfo={dataUser}/>
         </div>
         <Footer setOpen={setOpen}/>
         <Sidebar open={open}/>

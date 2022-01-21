@@ -39,7 +39,9 @@ const App  = () => {
 
   return (
     <Router>
+      <Sidebar />
       <Routes>
+      
       {data && <Route exact path="/" element={<DataIteration dataUser={data}/>} />}
         <Route exact path="/Transferencias" element={<Transferencias />} />
         <Route exact path="/AltaBeneficiario" element={<AltaBeneficiario />} />
