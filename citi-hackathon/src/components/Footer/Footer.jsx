@@ -2,12 +2,11 @@
 import React from "react";
 import accesibilidad from "../../assets/accesibilidadBlanco.png";
 import voz from "../../assets/Voz-azul.png";
-import tamañoLetra from "../../assets/tamañofuente-EscalaDeGrises.png";
+import tamañoLetra from "../../assets/TamañoLetra-azul.png";
 
 const Footer = () => {
   return (
-    <div>
-      <footer>
+    <footer>
       <img
         className="icon-footer"
         src={accesibilidad}
@@ -23,8 +22,7 @@ const Footer = () => {
         src={tamañoLetra}
         alt="icono para aumentar el tamaño de letra"
       />
-      </footer>
-    </div>
+    </footer>
   );
 };
 
