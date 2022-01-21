@@ -6,6 +6,7 @@ import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 import Transferencias from "../components/Transferencias/Transferencias";
 import AltaBeneficiario from "../components/AltaBeneficiario/AltaBeneficiario";
+import Sidebar from "../components/Footer/Sidebar"
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
         />
         <Route exact path="/Header" element={<Header />} />
         <Route exact path="/Footer" element={<Footer />} />
+        <Route exact path="/Sidebar" element={<Sidebar />} />
       </Routes>
     </Router>
   );
