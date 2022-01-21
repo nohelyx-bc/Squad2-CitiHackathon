@@ -1,13 +1,16 @@
 @import "../../Styles/variables";
-footer {
-  display: flex;
-  background-color: $primary-dark;
-  justify-content: space-evenly;
-  border-color: white;
+footer{
+display: flex;
+background-color: $primary-dark;
+justify-content: space-around;
+height: 4rem;
+border-top: 1px solid #FFFFFF;
+padding: 2px;
 }
-.icon-footer {
-  height: 2.8rem;
-  width: 2.8rem;
-  display: flex;
-  justify-content: space-evenly;
-}
+.icon-footer{
+margin: 5px;
+height: 3.5rem;
+width: 3.5rem;
+display: flex;
+justify-content: space-evenly;
+} 

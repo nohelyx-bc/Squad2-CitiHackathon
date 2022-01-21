@@ -3,15 +3,17 @@ import React from "react";
 const PrincipalVista = () => {
   return (
     <main>
-      <h2 className="titulos-predeterminado">BIENVENID@ USUARI@</h2>
-      <section>
-        <button>TRANSFERENCIA</button>
-        <button>AGREGAR CUENTAS A TERCEROS</button>
+      <h3 className="titulos-predeterminado">BIENVENID@ USUARI@</h3>
+      <section className="botones">
+        <button className="confirmar">TRANSFERENCIA</button>
+        <button className="confirmar">AGREGAR CUENTAS A TERCEROS</button>
       </section>
-      <section>
+      <section className="info-container">
         <p>CUENTA AHORRO CITIBANAMEX</p>
-        <p>***587</p>
-        <p>20.000.00 MXN</p>
+        <section>
+          <p>***587</p>
+          <p>20.000.00 MXN</p>
+        </section>
       </section>
     </main>
   );

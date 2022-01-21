@@ -9,6 +9,11 @@ const Footer = () => {
     <footer>
       <img
         className="icon-footer"
+        src={accesibilidad}
+        alt="icono para acceder a menu de accesibilidad"
+      />
+      <img
+        className="icon-footer"
         src={voz}
         alt="icono de accesibilidad de voz"
       />
@@ -16,11 +21,6 @@ const Footer = () => {
         className="icon-footer"
         src={tamañoLetra}
         alt="icono para aumentar el tamaño de letra"
-      />
-      <img
-        className="icon-footer"
-        src={accesibilidad}
-        alt="icono para acceder a menu de accesibilidad"
       />
     </footer>
   );
