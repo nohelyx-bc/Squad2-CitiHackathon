@@ -9,14 +9,13 @@
     min-height: 100vh;
     flex-direction: column;
     align-items: center;
-    
 }
 h1 {
     color:white;
     text-align: center;
     letter-spacing: 0.05em;
 }
-.info-transferencia {
+.info-container {
     display:flex;
     justify-content: center;
     width: 80%;
@@ -25,50 +24,34 @@ h1 {
     padding:15px;
     background-color: $primary;
     border: 1px solid #FFFFFF;
-    flex-direction:column;
     padding: 3rem;
     margin:1rem;
     width: 70%;
     border-radius: 12px;
     height: 50%;
     align-items: center;
-    
 }
-h2 {
+.info-cuenta-origen {
+    display: flex;
+    flex-direction:column;
+
+}
+p {
     color:white;
     font-size: 1.5rem;
     letter-spacing: 0.05em;
-    text-align: center;
+    text-align:start;
 }
-h3{
-    color:white;
-    font-size: 1.5rem;
-    letter-spacing: 0.05em;
-}
-.input-destinatario {
+
+input {
     display: flex;
     margin: 15px;
     width: 343px;
     height: 50px;
     font-size: 1.5rem;
     letter-spacing: 0.05em;
-    text-indent: 14px;    
-}
-.input-concepto {
-    margin: 15px;
-    width: 343px;
-    height: 50px;
-    font-size: 1.5rem;
-    letter-spacing: 0.05em;
-    text-indent: 14px;
-}
-.input-importe {
-    margin: 15px;
-    width: 343px;
-    height: 50px;
-    font-size: 1.5rem;
-    letter-spacing: 0.05em;
-    text-indent: 14px;
+    text-indent: 14px;  
+    border-radius: 5px;  
 }
 .botones {
     display: flex;
@@ -82,9 +65,9 @@ h3{
     font-size: 1.5rem;
     letter-spacing: 0.05em;
     color:white;
-    background-color: rgba(5, 108, 174, 1);
+    background-color: rgba(7, 83, 147, 1);
     border-radius: 10px;
-    border-color: rgba(255, 255, 255, 0.521);
+    border-color: rgba(255, 255, 255, 0.589);
     box-shadow: 6px 4px 4px rgba(255, 255, 255, 0.25);
     cursor:pointer;
 }
@@ -95,9 +78,9 @@ h3{
     font-size: 1.5rem;
     letter-spacing: 0.05em;
     color:white;
-    background-color: rgba(7, 83, 147, 1);
+    background-color: rgba(5, 108, 174, 1);
     border-radius: 10px;
-    border-color: rgba(255, 255, 255, 0.589);
+    border-color: rgba(255, 255, 255, 0.521);
     box-shadow: 6px 4px 4px rgba(255, 255, 255, 0.25);
     cursor:pointer;
 }

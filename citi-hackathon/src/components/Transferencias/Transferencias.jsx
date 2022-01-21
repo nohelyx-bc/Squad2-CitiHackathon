@@ -8,20 +8,24 @@ const Transferencias = () => {
     <> 
     <div className="container-transferencias">
     <Header />
-      <h1>TRANSFERENCIA</h1>
-      <form className="info-transferencia">
-        <h2>CUENTA DE ORIGEN</h2>
-        <h3>***587852</h3>
-        <input className="input-destinatario" placeholder= "BENEFICIARIO"></input>
-        <input className="input-concepto" placeholder="CONCEPTO"></input>
-        <input className="input-importe" placeholder="IMPORTE"></input>
+      <h2>TRANSFERENCIA</h2>
+      <form className="info-container">
+        <section className="info-cuenta-origen">
+        <p>SALDO DISPONIBLE</p>
+        <p>$20.000.00</p>
+        <p>DESDE CUENTA DE ORIGEN</p>
+        <p>***587852</p>
+        </section>
+        <input placeholder= "BENEFICIARIO"></input>
+        <input placeholder="CONCEPTO"></input>
+        <input placeholder="IMPORTE"></input>
       </form>
       <section className="botones">
         <button className="boton-regresar">REGRESAR</button>
         <button className="boton-confirmar">CONFIRMAR</button>
       </section>
-    <Footer />
     </div>
+    <Footer />
     </>
   );
 };
