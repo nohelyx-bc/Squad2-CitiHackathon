@@ -5,8 +5,8 @@ const PrincipalVista = () => {
     <main>
       <h3 className="titulos-predeterminado">BIENVENID@ USUARI@</h3>
       <section className="botones">
-        <button className="confirmar">TRANSFERENCIA</button>
-        <button className="confirmar">AGREGAR CUENTAS A TERCEROS</button>
+        <button className="boton-confirmar">TRANSFERENCIA</button>
+        <button className="boton-confirmar">AGREGAR CUENTAS A TERCEROS</button>
       </section>
       <section className="info-container">
         <p>CUENTA AHORRO CITIBANAMEX</p>
