@@ -1,0 +1,13 @@
+@import "../../Styles/variables";
+
+header{
+    background-color: $primary;
+    display: flex;
+    justify-content: center;
+}
+.img-logo{
+    height: 4em;
+    width: 22em;
+    display: flex;
+  
+}
