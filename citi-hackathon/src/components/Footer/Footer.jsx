@@ -6,13 +6,23 @@ import tamañoLetra from "../../assets/TamañoDeFuente-predeterminado.png";
 
 const Footer = () => {
   return (
-    <div>
-      <footer>
-        <img className="icon-footer" src={voz} alt="icon de voz" />
-        <img className="icon-footer" src={tamañoLetra} alt="icon de letra" />
-        <img className="icon-footer" src={accesibilidad} alt="icon accesibilidad" />
-      </footer>
-    </div>
+    <footer>
+      <img
+        className="icon-footer"
+        src={voz}
+        alt="icono de accesibilidad de voz"
+      />
+      <img
+        className="icon-footer"
+        src={tamañoLetra}
+        alt="icono para aumentar el tamaño de letra"
+      />
+      <img
+        className="icon-footer"
+        src={accesibilidad}
+        alt="icono para acceder a menu de accesibilidad"
+      />
+    </footer>
   );
 };
 

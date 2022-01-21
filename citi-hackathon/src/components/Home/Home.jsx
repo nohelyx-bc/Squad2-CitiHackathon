@@ -1,6 +1,7 @@
 import React from "react";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
+import PrincipalVista from "../PrincipalVista/PrincipalVista";
 
 const Home = () => {
   // const styleBody={
@@ -11,7 +12,7 @@ const Home = () => {
       <div className="container-predeterminado" >
         <Header />
         <div className="render">
-          <h1>Hola</h1>
+          <PrincipalVista />
         </div>
         <Footer />
       </div>
