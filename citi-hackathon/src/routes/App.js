@@ -1,25 +1,31 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Home from '../components/Home/Home';
-import Transferencias from '../components/Transferencias';
-import AltaBeneficiario from '../components/AltaBeneficiario';
-import ConfirmacionTransferencia from '../components/ConfirmacionTransferencia';
-import Header from '../components/Header/Header';
-import Footer from '../components/Footer/Footer';
+import Home from "../components/Home/Home";
+import ConfirmacionTransferencia from "../components/ConfirmacionTransferencia";
+import Header from "../components/Header/Header";
+import Footer from "../components/Footer/Footer";
+import Transferencias from "../components/Transferencias/Transferencias";
+import AltaBeneficiario from "../components/AltaBeneficiario/AltaBeneficiario";
+import Sidebar from "../components/Footer/Sidebar"
 
-const app = () => {
+const App = () => {
   return (
     <Router>
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route exact path="/Transferencias" element={<Transferencias />} />
         <Route exact path="/AltaBeneficiario" element={<AltaBeneficiario />} />
-        <Route exact path="/ConfirmacionTransferencia" element={<ConfirmacionTransferencia />} />
+        <Route
+          exact
+          path="/ConfirmacionTransferencia"
+          element={<ConfirmacionTransferencia />}
+        />
         <Route exact path="/Header" element={<Header />} />
         <Route exact path="/Footer" element={<Footer />} />
+        <Route exact path="/Sidebar" element={<Sidebar />} />
       </Routes>
     </Router>
   );
 };
 
-export default app;
+export default App;
