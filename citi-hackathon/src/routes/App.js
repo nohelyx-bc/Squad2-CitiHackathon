@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from '../components/Home/Home';
-import Transferencias from '../components/Transferencias';
+import Transferencias from '../components/Transferencias/Transferencias';
 import AltaBeneficiario from '../components/AltaBeneficiario';
 import ConfirmacionTransferencia from '../components/ConfirmacionTransferencia';
 import Header from '../components/Header/Header';
