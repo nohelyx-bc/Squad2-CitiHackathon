@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { helpHttp } from "../helpers/helpHttp";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Sidebar from "../components/Footer/Sidebar";
 // import Home from '../components/Home/Home';
 import Transferencias from '../components/Transferencias/Transferencias';
 import AltaBeneficiario from '../components/AltaBeneficiario/AltaBeneficiario';
@@ -49,6 +50,7 @@ const App  = () => {
         />
         <Route exact path="/Header" element={<Header />} />
         <Route exact path="/Footer" element={<Footer />} />
+        <Route exact path="/Sidebar" element={<Sidebar />} />
       </Routes>
     </Router>
   );
