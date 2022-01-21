@@ -4,7 +4,8 @@ import Sidebar from "../Footer/Sidebar";
 import Header from "../Header/Header";
 import PrincipalVista from "../PrincipalVista/PrincipalVista";
 
-const Home = () => {
+const Home = ({dataUser}) => {
+  console.log('estoy en home', dataUser);
   // const styleBody={
   //   background:"red"
   // }
@@ -14,7 +15,7 @@ const Home = () => {
       <div className="container-predeterminado" >
         <Header />
         <div className="render">
-          <PrincipalVista />
+        <PrincipalVista userInfo={dataUser}/>
         </div>
         <Footer setOpen={setOpen}/>
         <Sidebar open={open}/>
