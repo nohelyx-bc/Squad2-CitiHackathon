@@ -1,5 +1,6 @@
-import React from "react";
+import React, {useState} from "react";
 import Footer from "../Footer/Footer";
+import Sidebar from "../Footer/Sidebar";
 import Header from "../Header/Header";
 import PrincipalVista from "../PrincipalVista/PrincipalVista";
 
@@ -7,6 +8,7 @@ const Home = () => {
   // const styleBody={
   //   background:"red"
   // }
+  const [open, setOpen] = useState(false);
   return (
     <>
       <div className="container-predeterminado" >
@@ -14,7 +16,8 @@ const Home = () => {
         <div className="render">
           <PrincipalVista />
         </div>
-        <Footer />
+        <Footer setOpen={setOpen}/>
+        <Sidebar open={open}/>
       </div>
     </>
   );
