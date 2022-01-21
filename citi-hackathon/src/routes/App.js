@@ -6,6 +6,7 @@ import AltaBeneficiario from '../components/AltaBeneficiario';
 import ConfirmacionTransferencia from '../components/ConfirmacionTransferencia';
 import Header from '../components/Header/Header';
 import Footer from '../components/Footer/Footer';
+import Sidebar from '../components/Footer/Sidebar';
 
 const app = () => {
   return (
@@ -17,6 +18,7 @@ const app = () => {
         <Route exact path="/ConfirmacionTransferencia" element={<ConfirmacionTransferencia />} />
         <Route exact path="/Header" element={<Header />} />
         <Route exact path="/Footer" element={<Footer />} />
+        <Route exact path="/Sidebar" element={<Sidebar />} />
       </Routes>
     </Router>
   );
