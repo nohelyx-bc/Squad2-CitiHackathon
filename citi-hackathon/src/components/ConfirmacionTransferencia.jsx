@@ -1,8 +1,17 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 
 const ConfirmacionTransferencia = () => {
+  const navigate = useNavigate();
+  const handleConfirmar = () => {
+    navigate("/");
+  };
+  const handleRegresar = () => {
+    navigate("/Transferencias");
+  };
+
   return (
     <>
       <div className="container-transferencias">
@@ -19,10 +28,10 @@ const ConfirmacionTransferencia = () => {
           </section>
         </form>
         <section className="botones">
-          <button className="boton-regresar">
+          <button className="boton-regresar" onClick={handleRegresar}>
             REGRESAR
           </button>
-          <button className="boton-confirmar">
+          <button className="boton-confirmar" onClick={handleConfirmar}>
             CONFIRMAR
           </button>
         </section>
