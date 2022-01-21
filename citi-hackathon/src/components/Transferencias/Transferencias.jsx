@@ -11,9 +11,9 @@ const Transferencias = () => {
       <h2>TRANSFERENCIA</h2>
       <form className="info-container">
         <section className="info-cuenta-origen">
-        <p>SALDO DISPONIBLE</p>
+        <h3>SALDO DISPONIBLE</h3>
         <p>$20.000.00</p>
-        <p>DESDE CUENTA DE ORIGEN</p>
+        <h3>DESDE CUENTA ORIGEN</h3>
         <p>***587852</p>
         </section>
         <input placeholder= "BENEFICIARIO"></input>
@@ -22,7 +22,7 @@ const Transferencias = () => {
       </form>
       <section className="botones">
         <button className="boton-regresar">REGRESAR</button>
-        <button className="boton-confirmar">CONFIRMAR</button>
+        <button className="boton-confirmar">CONFIRMAR</button>     
       </section>
     </div>
     <Footer />
