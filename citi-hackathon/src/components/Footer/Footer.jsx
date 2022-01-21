@@ -2,7 +2,7 @@
 import React from "react";
 import accesibilidad from "../../assets/accesibilidadBlanco.png";
 import voz from "../../assets/Voz-azul.png";
-import tamañoLetra from "../../assets/TamañoDeFuente-predeterminado.png";
+import tamañoLetra from "../../assets/TamañoLetra-azul.png";
 
 const Footer = () => {
   return (
