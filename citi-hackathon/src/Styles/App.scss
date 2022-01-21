@@ -1,5 +1,8 @@
 @import "../Styles/variables";
 .container-predeterminado{
-  background-color: violet ;
-  min-height: 60vh;
+  background-color: $primary ;
+}
+#root{
+  padding: 0;
+  margin: 0;
 }

@@ -3,8 +3,8 @@ import React, { useEffect, useState } from "react";
 import { helpHttp } from "../helpers/helpHttp";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 // import Home from '../components/Home/Home';
-import Transferencias from '../components/Transferencias';
-import AltaBeneficiario from '../components/AltaBeneficiario';
+import Transferencias from '../components/Transferencias/Transferencias';
+import AltaBeneficiario from '../components/AltaBeneficiario/AltaBeneficiario';
 import ConfirmacionTransferencia from '../components/ConfirmacionTransferencia';
 import Header from '../components/Header/Header';
 import Footer from '../components/Footer/Footer';
@@ -35,13 +35,18 @@ const App  = () => {
   }, [url]);
   console.log(data)
 
+
   return (
     <Router>
       <Routes>
       {data && <Route exact path="/" element={<DataIteration dataUser={data}/>} />}
         <Route exact path="/Transferencias" element={<Transferencias />} />
         <Route exact path="/AltaBeneficiario" element={<AltaBeneficiario />} />
-        <Route exact path="/ConfirmacionTransferencia" element={<ConfirmacionTransferencia />} />
+        <Route
+          exact
+          path="/ConfirmacionTransferencia"
+          element={<ConfirmacionTransferencia />}
+        />
         <Route exact path="/Header" element={<Header />} />
         <Route exact path="/Footer" element={<Footer />} />
       </Routes>
