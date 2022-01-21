@@ -2,13 +2,15 @@
 footer{
     display: flex;
     background-color: $primary-dark;
-    justify-content: space-evenly;
-
+    justify-content: space-around;
+    height: 4rem;
+    border-top: 1px solid #FFFFFF;
+    padding: 2px;
 }
 .icon-footer{
-    height: 3rem;
-    width: 3rem;
+    margin: 5px;
+    height: 3.5rem;
+    width: 3.5rem;
     display: flex;
     justify-content: space-evenly;
-
 }
