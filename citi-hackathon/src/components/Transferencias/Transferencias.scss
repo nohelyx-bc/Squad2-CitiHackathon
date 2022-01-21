@@ -31,17 +31,18 @@ h1 {
     height: 50%;
     align-items: center;
 }
-h2 {
+.info-cuenta-origen {
+    display: flex;
+    flex-direction:column;
+
+}
+p {
     color:white;
     font-size: 1.5rem;
     letter-spacing: 0.05em;
-    text-align: center;
+    text-align:start;
 }
-h3{
-    color:white;
-    font-size: 1.5rem;
-    letter-spacing: 0.05em;
-}
+
 input {
     display: flex;
     margin: 15px;
@@ -49,8 +50,8 @@ input {
     height: 50px;
     font-size: 1.5rem;
     letter-spacing: 0.05em;
-    text-indent: 14px;
-    border-radius: 5px;
+    text-indent: 14px;  
+    border-radius: 5px;  
 }
 .botones {
     display: flex;
