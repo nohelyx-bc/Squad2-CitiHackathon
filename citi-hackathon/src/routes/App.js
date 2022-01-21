@@ -14,7 +14,7 @@ const App  = () => {
   const[data, setData] = useState({});
 
   // let url = `${process.env.REACT_APP_JSON_SERVER_USER}`;
-  let url='https://citibanamex-hackathon.herokuapp.com/User'
+  let url='https://citibanamex-hackathon.herokuapp.com/User?id=1230'
   let api = helpHttp();
 
   useEffect(() => {
