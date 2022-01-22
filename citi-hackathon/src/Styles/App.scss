@@ -1,6 +1,7 @@
 @import "../Styles/variables";
 .container-predeterminado{
   background-color: $primary ;
+  min-height: 100vh;
 }
 #root{
   padding: 0;
