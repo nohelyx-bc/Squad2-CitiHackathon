@@ -3,11 +3,15 @@ h3,h4 {
   text-align: center;
   color: $primary-font-color;
   font-family: $primary-font;
+  letter-spacing: 0.03em;
+  line-height: 2em;
 }
 .container-botones-principal {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 15px;
+  width: 93%;
 }
 .boton-confirmar-principal {
   margin: 10px;
@@ -30,9 +34,20 @@ h3,h4 {
     background-color: $primary;
     border: 1px solid $border-div-ligth;
     padding: 2rem;
-    margin: 1rem;
+    margin: 1.8rem;
     border-radius: 12px;
     height: 50%;
     align-items: center;
+    width: 67vw;
+  
   }
+  main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+
 

@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-const PrincipalVista = (propsUser) => {
+const PrincipalVista = (propsUser, {fontSize}) => {
 
   console.log("estoy en principal vista", propsUser.userInfo)
   console.log(propsUser.userInfo.tarjetas)
@@ -24,13 +24,15 @@ const PrincipalVista = (propsUser) => {
         <button className="boton-confirmar-principal" onClick={handleTransferencias}>TRANSFERENCIA</button>
         <button className="boton-confirmar-principal" onClick={handleCuentasTerceros}>AGREGAR CUENTAS DE TERCEROS</button>
       </section>
-      <section className="info-container-principal ">
+      <section className="info-container">
 
         {propsUser.userInfo.tarjetas.map((val) => {
           return (
             
             <section  key={val.id} className="content-items">
-              <p>{val.tipo_tarjeta}</p>
+              <p  style={{
+          fontSize: `${fontSize}px`
+        }}>{val.tipo_tarjeta}</p>
               <section>
                 <p>***{val.numero_cuenta.slice(12,16)}</p>
                 <p>$ {val.saldo} mxp</p>
