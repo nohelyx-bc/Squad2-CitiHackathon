@@ -16,8 +16,8 @@ const ConfirmacionTransferencia = () => {
     <>
       <div className="container-transferencias">
         <Header />
-        <h2> HOLA USER</h2>
         <h2>TRANSFERENCIA</h2>
+        <h2> HOLA USER</h2>
         <form className="info-container">
           <section className="info-cuenta-origen">
             <p className="center-item">CONFIRMACION</p>
