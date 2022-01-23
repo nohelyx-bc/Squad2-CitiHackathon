@@ -6,7 +6,7 @@
   padding: 0;
   margin: 0;
   width: 100%;
-  min-height: 90vh;
+  min-height: 106vh;
   flex-direction: column;
   align-items: center;
 }
@@ -21,12 +21,12 @@ h2 {
   flex-direction: column;
   background-color: $primary;
   border: 1px solid $border-div-ligth;
-  padding: 2rem;
-  margin: 1rem;
-  width: 80%;
+
+  width: 90%;
   border-radius: 12px;
-  height: 50%;
-  align-items: center;
+  height: 45%;
+ 
+  
 }
 .info-cuenta-origen {
   display: flex;
@@ -53,6 +53,7 @@ input {
   display: flex;
   padding: 15px;
   justify-content: space-evenly;
+  margin-bottom: 10px;
 }
 .boton-confirmar {
   margin: 10px;
