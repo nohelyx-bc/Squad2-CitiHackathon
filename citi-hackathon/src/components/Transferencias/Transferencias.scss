@@ -1,6 +1,6 @@
 .container-transferencias {
   display: flex;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: $primary-font;
   min-height: 81vh;
   background-color: $primary;
   padding: 0;
@@ -11,7 +11,7 @@
   align-items: center;
 }
 h2 {
-  color: white;
+  color:  $primary-font-color;
   text-align: center;
   letter-spacing: 0.05em;
 }
@@ -26,7 +26,7 @@ h3 {
   border-radius: 10px;
   flex-direction: column;
   background-color: $primary;
-  border: 1px solid #ffffff;
+  border: 1px solid $border-div-ligth;
   padding: 2rem;
   margin: 1rem;
   width: 70%;
@@ -39,7 +39,7 @@ h3 {
   flex-direction: column;
 }
 p {
-  color: white;
+  color: $secondary-font-color;
   font-size: 1.5rem;
   letter-spacing: 0.03em;
   text-align: start;
@@ -63,14 +63,13 @@ input {
   margin: 10px;
   width: fit-content;
   padding: 5px 5px;
-
   font-size: 1.5rem;
   letter-spacing: 0.05em;
-  color: white;
-  background-color: rgba(7, 83, 147, 1);
+  color: $font-color-button;
+  background-color: $color-primary-button;
   border-radius: 10px;
-  border-color: rgba(255, 255, 255, 0.589);
-  box-shadow: 6px 4px 4px rgba(255, 255, 255, 0.25);
+  border-color: $border-color-primary;
+  box-shadow: 6px 4px 4px $shadow-button;
   cursor: pointer;
 }
 .boton-regresar {
@@ -81,10 +80,10 @@ input {
   height: 57px;
   font-size: 1.5rem;
   letter-spacing: 0.05em;
-  color: white;
-  background-color: rgba(5, 108, 174, 1);
+  color:  $font-color-button;
+  background-color: $color-secondary-button;
   border-radius: 10px;
-  border-color: rgba(255, 255, 255, 0.521);
-  box-shadow: 6px 4px 4px rgba(255, 255, 255, 0.25);
+  border-color: $border-color-primary;
+  box-shadow: 6px 4px 4px $shadow-button;
   cursor: pointer;
 }

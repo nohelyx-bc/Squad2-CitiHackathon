@@ -12,15 +12,14 @@ const PrincipalVista = (propsUser) => {
   const handleCuentasTerceros = () => {
     navigate("/AltaBeneficiario");
   };
-
-
+  
   return (
     <main>
       {/* {propsUser.userInfo.forEach((user) => {
         return (
            <section key={user.id} className="content-items">  */}
-      <h3 className="titulos-predeterminado">BIENVENIDO </h3>
-      <h3> {propsUser.userInfo.nombre_titular}</h3>
+      <h3 className="titulos-predeterminado">BIENVENIDO</h3>
+      <h3>{propsUser.userInfo.nombre_titular}</h3>
       <section className="container-botones-principal">
         <button className="boton-confirmar-principal" onClick={handleTransferencias}>TRANSFERENCIA</button>
         <button className="boton-confirmar-principal" onClick={handleCuentasTerceros}>AGREGAR CUENTAS DE TERCEROS</button>
@@ -33,7 +32,7 @@ const PrincipalVista = (propsUser) => {
             <section  key={val.id} className="content-items">
               <p>{val.tipo_tarjeta}</p>
               <section>
-                <p>{val.numero_cuenta}</p>
+                <p>***{val.numero_cuenta.slice(12,16)}</p>
                 <p>$ {val.saldo} mxp</p>
               </section>
 
