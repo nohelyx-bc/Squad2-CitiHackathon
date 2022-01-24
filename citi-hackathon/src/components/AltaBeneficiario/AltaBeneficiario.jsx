@@ -1,9 +1,11 @@
-import React from "react";
+import {React, useState} from "react";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import { useNavigate } from 'react-router-dom';
+import Sidebar from "../Footer/Sidebar";
 
 const AltaBeneficiario = ({fontSize}) => {
+  const [open, setOpen] = useState(false);
   const navigate = useNavigate();
   const handleTransferencia = () => {
     navigate("/Transferencias");
@@ -42,7 +44,8 @@ const AltaBeneficiario = ({fontSize}) => {
           ></input>
         </form>
       </div>
-      <Footer />
+      <Footer setOpen={setOpen}/>
+      <Sidebar open={open} setOpen={setOpen}/>
     </>
   );
 };

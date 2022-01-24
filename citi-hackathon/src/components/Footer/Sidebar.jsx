@@ -1,6 +1,5 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-import tamañoLetra from "../../assets/TamañoLetra-azul.png";
 
 
 const Sidebar = ({ open, setOpen }) => {
@@ -9,6 +8,34 @@ const Sidebar = ({ open, setOpen }) => {
     console.log(setOpen)
     setOpen(false);
   }
+
+  function smallMode() {
+    if (document.body.className === 'small-mode') {
+      document.body.className = ''
+      return
+    } else {
+      document.body.className = 'small-mode'
+    }
+  }
+
+  function mediumMode() {
+    if (document.body.className === 'medium-mode') {
+      document.body.className = ''
+      return
+    } else {
+      document.body.className = 'medium-mode'
+    }
+  }
+
+  function bigMode() {
+    if (document.body.className === 'big-mode') {
+      document.body.className = ''
+      return
+    } else {
+      document.body.className = 'big-mode'
+    }
+  }
+
 
   function darkMode() {
     if (document.body.className === 'dark') {
@@ -41,9 +68,9 @@ const Sidebar = ({ open, setOpen }) => {
           </li>
           <li className="btn-title">CONFIGURACION DE ACCESIBILIDAD</li>
           <li className="alinear-horizontal">
-            <img className="icon-pequeño" src={tamañoLetra} alt="Letra pequeña" />
-            <img className="icon-mediano" src={tamañoLetra} alt="Letra mediana" />
-            <img className="icon-grande" src={tamañoLetra} alt="Letra grande" /> 
+            <div className="icon-pequeño" onClick={smallMode}></div>
+            <div className="icon-mediano" onClick={mediumMode}></div>
+            <div className="icon-grande" onClick={bigMode}></div>
           </li>
           <li className="btn-oscuro" onClick={darkMode}>MODO OSCURO</li>
           <li className="btn-grises" onClick={greyMode}>ESCALA DE GRISES</li>
