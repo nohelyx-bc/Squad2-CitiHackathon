@@ -2,7 +2,9 @@
 import React from "react";
 import tamañoLetra from "../../assets/TamañoLetra-azul.png";
 
+
 const Sidebar = ({ open, setOpen }) => {
+  
   function closeSidebar(){
     console.log(setOpen)
     setOpen(false);
