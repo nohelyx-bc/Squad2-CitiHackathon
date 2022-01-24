@@ -18,7 +18,7 @@ const Home = ({dataUser}) => {
         <PrincipalVista userInfo={dataUser}/>
         </div>
         <Footer setOpen={setOpen}/>
-        <Sidebar open={open}/>
+        <Sidebar open={open} setOpen={setOpen}/>
       </div>
     </>
   );

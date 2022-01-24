@@ -1,7 +1,6 @@
 .container-transferencias {
   display: flex;
   font-family: $primary-font;
-  min-height: 81vh;
   background-color: $primary;
   padding: 0;
   margin: 0;
@@ -10,23 +9,44 @@
   flex-direction: column;
   align-items: center;
 }
+
+body.dark .container-transferencias{
+  background-color: $escala-grises-border;
+}
+
+body.grey .container-transferencias{
+  background-color: $background-grey-mode;
+  font-family: $text-on-secondary;
+}
+
 h2 {
+  padding: 0.5rem 0 0.5rem 0;
   color:  $primary-font-color;
   text-align: center;
   letter-spacing: 0.05em;
 }
-.info-container {
+body.grey h2 {
+  color: $text-grey-mode;
+}
+.info-container-transferencia {
   display: flex;
   border-radius: 10px;
   flex-direction: column;
   background-color: $primary;
   border: 1px solid $border-div-ligth;
-  padding: 2rem;
-  margin: 1rem;
+  padding: 1rem 3rem 1rem 3rem;
+  margin: 0px;
   width: 70%;
   border-radius: 12px;
   height: 50%;
   align-items: center;
+}
+body.grey .info-container-transferencia{
+  border: 2px solid $text-grey-mode;
+  background-color: $background-grey-mode;
+}
+body.dark .info-container-transferencia{
+  background-color: #343333;
 }
 .info-cuenta-origen {
   display: flex;
@@ -37,6 +57,9 @@ p {
   font-size: 1.5rem;
   letter-spacing: 0.03em;
   text-align: start;
+}
+body.grey p {
+  color: $text-grey-mode;
 }
 
 input {
@@ -67,11 +90,20 @@ input {
   box-shadow: 6px 4px 4px $shadow-button;
   cursor: pointer;
 }
+
+body.dark .boton-confirmar {
+  background-color: $modo-oscuro-backgound;
+}
+body.grey .boton-confirmar {
+  background-color: #828282d5;
+  color: $text-grey-mode;
+  border-color: $text-grey-mode;
+}
+
 .boton-regresar {
   margin: 10px;
   width: fit-content;
   padding: 5px 5px;
-
   height: 57px;
   font-size: 1.5rem;
   letter-spacing: 0.05em;
@@ -81,4 +113,12 @@ input {
   border-color: $border-color-primary;
   box-shadow: 6px 4px 4px $shadow-button;
   cursor: pointer;
+}
+body.dark .boton-regresar {
+  background-color: $escala-grises-border;
+}
+body.grey .boton-regresar {
+  background-color: $background-grey-mode;
+  color: $text-grey-mode;
+  border-color: $text-grey-mode;
 }
