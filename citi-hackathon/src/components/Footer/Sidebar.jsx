@@ -43,7 +43,7 @@ const Sidebar = ({ open, setOpen }) => {
           <li className="alinear-horizontal">
             <img className="icon-pequeño" src={tamañoLetra} alt="Letra pequeña" />
             <img className="icon-mediano" src={tamañoLetra} alt="Letra mediana" />
-            <img className="icon-grande" src={tamañoLetra} alt="Letra grande" />
+            <img className="icon-grande" src={tamañoLetra} alt="Letra grande" /> 
           </li>
           <li className="btn-oscuro" onClick={darkMode}>MODO OSCURO</li>
           <li className="btn-grises" onClick={greyMode}>ESCALA DE GRISES</li>
