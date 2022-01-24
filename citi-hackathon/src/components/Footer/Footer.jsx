@@ -2,9 +2,9 @@
 import React from "react";
 
 import { useNavigate } from "react-router-dom";
-import accesibilidad from "../../assets/accesibilidadBlanco.png";
-import voz from "../../assets/Voz-azul.png";
-import tamañoLetra from "../../assets/TamañoLetra-azul.png";
+import accesibilidad from "../../assets/Access-white.png";
+import voz from "../../assets/Voice.png";
+import tamañoLetra from "../../assets/Font.png";
 
 
 const Footer = ({ setOpen }) => {
