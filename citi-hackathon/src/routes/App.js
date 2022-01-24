@@ -10,8 +10,9 @@ import ConfirmacionTransferencia from '../components/ConfirmacionTransferencia';
 import Header from '../components/Header/Header';
 import Footer from '../components/Footer/Footer';
 import { DataIteration } from "../components/Home/DataIteration";
+import VoiceAssistant from "../components/VoiceAssistant";
 
-const App  = () => {
+const App  = ({fontSize}) => {
   const[data, setData] = useState({});
 
   // let url = `${process.env.REACT_APP_JSON_SERVER_USER}`;
@@ -43,7 +44,7 @@ const App  = () => {
       <Routes>
       
       {data && <Route exact path="/" element={<DataIteration dataUser={data}/>} />}
-        <Route exact path="/Transferencias" element={<Transferencias />} />
+        <Route exact path="/Transferencias" element={<Transferencias  />} />
         <Route exact path="/AltaBeneficiario" element={<AltaBeneficiario />} />
         <Route
           exact
@@ -53,6 +54,7 @@ const App  = () => {
         <Route exact path="/Header" element={<Header />} />
         <Route exact path="/Footer" element={<Footer />} />
         <Route exact path="/Sidebar" element={<Sidebar />} />
+        <Route exact path="/VoiceAssistant" element={<VoiceAssistant />} />
       </Routes>
     </Router>
   );
