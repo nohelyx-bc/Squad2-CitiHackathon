@@ -1,9 +1,12 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { renderMatches, useNavigate } from "react-router-dom";
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 
 const ConfirmacionTransferencia = () => {
+
+  
+
   const navigate = useNavigate();
   const handleConfirmar = () => {
     navigate("/");
@@ -39,6 +42,7 @@ const ConfirmacionTransferencia = () => {
       <Footer />
     </>
   );
+  
 };
 
 export default ConfirmacionTransferencia;
