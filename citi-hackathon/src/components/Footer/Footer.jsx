@@ -28,5 +28,4 @@ const Footer = ({setOpen}) => {
     </footer>
   );
 };
-
 export default Footer;
