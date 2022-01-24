@@ -1,14 +1,19 @@
 import React from "react";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
+import { useNavigate } from 'react-router-dom';
 
-const AltaBeneficiario = () => {
+const AltaBeneficiario = ({fontSize}) => {
+  const navigate = useNavigate();
+  const handleTransferencia = () => {
+    navigate("/Transferencias");
+  };
   return (
     <>
       <div className="container-transferencias">
         <Header />
-        <h2 className="AltaBeneficiario-legend">HOLA USER!</h2>
-        <form action="" className="altaBeneficiario-form">
+        <h2 style={{fontSize: `${fontSize}px`}}>HOLA USER!</h2>
+        <form action="" className="info-container">
           <legend className="AltaBeneficiario-legend">
             AGREGAR CUENTAS A TERCEROS
           </legend>
@@ -33,6 +38,7 @@ const AltaBeneficiario = () => {
             name="submit"
             value="Guardar"
             className="boton-guardar"
+            onClick={handleTransferencia}
           ></input>
         </form>
       </div>

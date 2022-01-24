@@ -1,13 +1,37 @@
 @import "../../Styles/variables";
+$assetPathWhite : "/assets/Logo-blanco.png";
+$assetPathGrey : "/assets/Logo-gris.png";
+$assetPathBlue : "/assets/Logo-predeterminado.png";
 
 header{
     background-color: $primary;
     display: flex;
     justify-content: center;
+    padding: 15px;
 }
 .img-logo{
-    height: 4em;
-    width: 22em;
+    padding-top: 1rem;
+    height: 4rem;
+    width: 19rem;
     display: flex;
-  
+    background-image: url($assetPathBlue);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+body.dark .img-logo{
+    background-image: url($assetPathWhite);
+  }
+  body.grey .img-logo{
+    background-image: url($assetPathGrey);
+  }
+  body.grey .img-logo{
+    background-color: #AAAAAA;
+  }
+  body.dark header{
+    background-color: $escala-grises-border;
+  }
+
+body.grey header{
+  background-color: #AAAAAA;
 }

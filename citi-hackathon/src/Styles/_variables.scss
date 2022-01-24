@@ -1,10 +1,32 @@
 $primary: #056CAE;
-$primary-light: rgba(196, 196, 196,0.1); 
-$primary-dark:  rgba(13, 92, 158, 1);       ;
-$secondary:#ffffff;
-$secondary-light: #ffffff;
-$secondary-dark:#343333;
-$text-on-primary: #ffffff;
+$primary-light:  rgba(13, 92, 158, 1);    ;
+$secondary:#ffffff;//para texto
+$border-div-ligth: #ffffff;//para bordes
+$primary-dark: rgba(196, 196, 196,0.1); 
+
+$primary-font:Arial, Helvetica, sans-serif;
+$primary-font-color:#ffffff;
+$secondary-font-color:#ffffff;
+
+$primary-content-color:#c4c4c423;
+
+$font-color-button:#ffffff;
+$color-secondary-button:rgba(7, 83, 147, 1);
+$color-primary-button:rgba(5, 108, 174, 1);
+$border-color-primary:rgba(255, 255, 255, 0.589);
+$shadow-button:rgba(255, 255, 255, 0.25);
+
+$modo-oscuro-font-button:#ffffff;
+$modo-oscuro-backgound:#121212de;
+$escala-grises-font-button:#505050;
+$escala-grises-backgound:#BABABA;
+$escala-grises-border:black;
+
+
+//modo oscuro
 $text-on-secondary: #000000;
-
-
+$secondary-dark:#343333;
+$shadow-button-dark:rgba(255, 255, 255, 0.959);
+//Modo grises
+$text-grey-mode: #373737;
+$background-grey-mode: #AAAAAA;

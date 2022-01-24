@@ -1,10 +1,12 @@
 /* eslint-disable no-unused-vars */
-import React from "react";
+import {React, useState} from "react";
 import { useNavigate } from "react-router-dom";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
+import Sidebar from "../Footer/Sidebar";
 
 const Transferencias = () => {
+  const [open, setOpen] = useState(false);
   const navigate = useNavigate();
   const handleConfirmar = () => {
     navigate("/ConfirmacionTransferencia");
@@ -17,7 +19,7 @@ const Transferencias = () => {
       <div className="container-transferencias">
         <Header />
         <h2>TRANSFERENCIA</h2>
-        <form className="info-container">
+        <form className="info-container-transferencia">
           <section className="info-cuenta-origen">
             <p>SALDO DISPONIBLE</p>
             <p>$20.000.00</p>
@@ -37,7 +39,8 @@ const Transferencias = () => {
           </button>
         </section>
       </div>
-      <Footer />
+      <Footer setOpen={setOpen}/>
+      <Sidebar open={open} setOpen={setOpen}/>
     </>
   );
 };

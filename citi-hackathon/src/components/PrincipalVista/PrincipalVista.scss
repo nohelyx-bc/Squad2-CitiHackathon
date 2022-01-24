@@ -1,40 +1,78 @@
-h3 {
+h3,h4 {
+  font-family: $primary-font;
   text-align: center;
-  color: white;
+  color: $primary-font-color;
+  font-family: $primary-font;
+  letter-spacing: 0.03em;
+  line-height: 2em;
+  padding: 0.5rem 0 0.5rem 0;
+}
+body.grey h3 {
+  color: $text-grey-mode;
+}
+body.grey h4 {
+  color: $text-grey-mode;
+
 }
 .container-botones-principal {
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  margin: 15px;
+  width: 93%;
 }
-
 .boton-confirmar-principal {
   margin: 10px;
-  width: 90%;
+  width: 91%;
   padding: 5px 5px;
-
+  font-weight: 600;
   font-size: 1.5rem;
   letter-spacing: 0.05em;
-  color: white;
-  background-color: rgba(7, 83, 147, 1);
+  color: $font-color-button;
+  background-color: $color-secondary-button;
   border-radius: 10px;
-  border-color: rgba(255, 255, 255, 0.589);
-  box-shadow: 6px 4px 4px rgba(255, 255, 255, 0.25);
+  border-color: $border-color-primary;
+  box-shadow: 6px 4px 4px $shadow-button;
   cursor: pointer;
   height: 10vh;
 }
+body.grey .boton-confirmar-principal {
+  background-color: $background-grey-mode;
+  border: 2px solid $text-grey-mode;
+  color: $text-grey-mode;
+}
+body.dark .boton-confirmar-principal {
+  background-color: $escala-grises-border;
+}
+
 .info-container-principal {
     display: flex;
     border-radius: 10px;
     flex-direction: column;
     background-color: $primary;
-    border: 1px solid #ffffff;
+    border: 1px solid $border-div-ligth;
     padding: 2rem;
-    margin: 1rem;
-  
+    margin: 1.8rem;
     border-radius: 12px;
     height: 50%;
     align-items: center;
+    width: 67vw;
   }
+
+  main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+body.grey .info-container-principal {
+    background-color: $background-grey-mode;
+    border: 2px solid $text-grey-mode;
+}
+body.dark .info-container-principal {
+  background-color: $escala-grises-border;
+}
+
+
 
