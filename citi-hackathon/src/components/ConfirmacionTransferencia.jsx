@@ -1,9 +1,11 @@
-import React from "react";
+import {React, useState} from "react";
 import { useNavigate } from "react-router-dom";
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
+import Sidebar from "../components/Footer/Sidebar";
 
 const ConfirmacionTransferencia = () => {
+  const [open, setOpen] = useState(false);
   const navigate = useNavigate();
   const handleConfirmar = () => {
     navigate("/");
@@ -36,7 +38,8 @@ const ConfirmacionTransferencia = () => {
           </button>
         </section>
       </div>
-      <Footer />
+      <Footer setOpen={setOpen}/>
+      <Sidebar open={open} setOpen={setOpen}/>
     </>
   );
 };

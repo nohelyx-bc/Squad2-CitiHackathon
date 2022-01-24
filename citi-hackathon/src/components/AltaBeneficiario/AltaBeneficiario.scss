@@ -5,6 +5,8 @@
   letter-spacing: 0.05em;
   margin-left: 1rem;
   transition: 0.5s;
+  font-weight: bold;
+  font-size: 1.1rem;
 }
 
 .AltaBeneficiario-legend {
@@ -12,6 +14,8 @@
   letter-spacing: 0.05em;
   margin-left: 1rem;
   transition: 0.5s;
+  font-weight: bold;
+  font-size: 1.1rem;
 }
 
 .boton-guardar {
@@ -29,8 +33,8 @@
 }
 
 body.dark .boton-guardar{
-  background-color: $secondary-dark;
-  box-shadow: 6px 4px 4px $shadow-button-dark;
+  background-color: $background-dark-mode;
+  box-shadow: 2px 2px 2px $shadow-button-dark;
 }
 
 body.grey .boton-guardar{
