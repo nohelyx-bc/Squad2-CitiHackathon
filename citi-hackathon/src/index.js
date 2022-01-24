@@ -5,6 +5,9 @@ import "../src/Styles/main.scss";
 
 
 ReactDOM.render(
+
+
+  
   <React.StrictMode>
     <App />
   </React.StrictMode>,
