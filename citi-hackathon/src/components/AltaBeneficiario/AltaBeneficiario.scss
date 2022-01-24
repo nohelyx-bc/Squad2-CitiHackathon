@@ -7,9 +7,12 @@
 }
 
 .AltaBeneficiario-legend {
+  font-family: $primary-font;
+  font-size: 1rem;
   color: $secondary;
   letter-spacing: 0.05em;
-  margin-left: 1rem;
+  text-align: center;
+  letter-spacing: 0.05em;
 }
 
 .boton-guardar {

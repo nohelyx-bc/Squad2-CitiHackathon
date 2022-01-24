@@ -9,13 +9,14 @@ const Home = ({dataUser}) => {
   // const styleBody={
   //   background:"red"
   // }
+  
   const [open, setOpen] = useState(false);
   return (
     <>
       <div className="container-predeterminado" >
         <Header />
         <div className="render">
-        <PrincipalVista userInfo={dataUser}/>
+        <PrincipalVista userInfo={dataUser} />
         </div>
         <Footer setOpen={setOpen}/>
         <Sidebar open={open}/>

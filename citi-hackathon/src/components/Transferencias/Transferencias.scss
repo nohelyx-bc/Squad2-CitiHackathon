@@ -39,7 +39,7 @@ p {
   text-align: start;
 }
 
-input {
+input, select {
   display: flex;
   margin: 15px;
   width: 85%;
@@ -49,6 +49,7 @@ input {
   text-indent: 14px;
   border-radius: 5px;
 }
+
 .botones {
   display: flex;
   padding: 15px;
@@ -71,7 +72,6 @@ input {
   margin: 10px;
   width: fit-content;
   padding: 5px 5px;
-
   height: 57px;
   font-size: 1.5rem;
   letter-spacing: 0.05em;
@@ -81,4 +81,12 @@ input {
   border-color: $border-color-primary;
   box-shadow: 6px 4px 4px $shadow-button;
   cursor: pointer;
+}
+.tarjeta{
+  width: 85%;
+  height: 6vh;
+  font-size: 1.5rem;
+  color: gray;
+  border-radius: 5px;
+  background: $secondary;
 }

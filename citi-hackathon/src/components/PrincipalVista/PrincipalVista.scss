@@ -23,16 +23,16 @@ h3,h4 {
   cursor: pointer;
   height: 10vh;
 }
-.info-container-principal {
-    display: flex;
-    border-radius: 10px;
-    flex-direction: column;
-    background-color: $primary;
-    border: 1px solid $border-div-ligth;
-    padding: 2rem;
-    margin: 1rem;
-    border-radius: 12px;
-    height: 50%;
-    align-items: center;
-  }
 
+.border{
+  display: flex;
+  // border-radius: 10px;
+  padding: 1rem;
+  flex-direction: column;
+  background-color: $primary;
+  border: 1px solid $border-div-ligth;
+  margin: 1rem;
+  border-radius: 12px;
+  height: 50%;
+  align-items: center;
+}

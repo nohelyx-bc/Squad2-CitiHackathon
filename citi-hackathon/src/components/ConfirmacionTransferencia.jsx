@@ -3,7 +3,10 @@ import { useNavigate } from "react-router-dom";
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 
-const ConfirmacionTransferencia = () => {
+const ConfirmacionTransferencia = ({importe,concepto, onAdd}) => {
+console.log(importe)
+//falta pasar datos
+
   const navigate = useNavigate();
   const handleConfirmar = () => {
     navigate("/");
