@@ -55,5 +55,12 @@ Propuesta de diseño en modo oscuro.
 
 #### 5. Especificaciones de uso
 
-Si se desea usar el asistente de voz y los comandos de voz es necesario que se consulte la pagina desde el navegador web google chrome.![Captura de Pantalla 2022-01-25 a la(s) 11 14 19](https://user-images.githubusercontent.com/86631102/151026281-6167a99a-8ac8-4e42-900c-599c5157d3a1.png)
-![Captura de Pantalla 2022-01-25 a la(s) 11 15 39](https://user-images.githubusercontent.com/86631102/151026311-cce6df72-01d7-45e5-8103-16116b80d014.png)
+Si se desea usar el asistente de voz y los comandos de voz es necesario que se consulte la pagina desde el navegador web google chrome.
+
+
+![Captura de Pantalla 2022-01-25 a la(s) 11 14 19](https://user-images.githubusercontent.com/86631102/151026483-ccdd049d-ca40-4552-9884-4ca87ed4fce3.png)
+
+
+
+![Captura de Pantalla 2022-01-25 a la(s) 11 15 39](https://user-images.githubusercontent.com/86631102/151026566-580e2787-5664-4964-bb13-58e0e290c0c1.png)
+
