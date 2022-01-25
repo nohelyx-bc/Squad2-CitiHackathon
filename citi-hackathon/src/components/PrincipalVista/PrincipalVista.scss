@@ -47,7 +47,7 @@ body.big-mode h4 {
 }
 .boton-confirmar-principal {
   margin: 10px;
-  width: 91%;
+  width: 95%;
   padding: 5px 5px;
   font-weight: 600;
   font-size: 1.5rem;
@@ -58,7 +58,7 @@ body.big-mode h4 {
   border-color: $border-color-primary;
   box-shadow: 6px 4px 4px $shadow-button;
   cursor: pointer;
-  height: 10vh;
+  height: 15vh;
 }
 body.small-mode .boton-confirmar-principal {
   font-size: 1.7rem; 
@@ -71,7 +71,7 @@ body.medium-mode .boton-confirmar-principal {
 
 body.big-mode .boton-confirmar-principal {
   font-size: 2rem; 
-  height: 14vh;
+  height: 18vh;
 }
 body.grey .boton-confirmar-principal {
   background-color: $background-grey-mode;
@@ -94,6 +94,7 @@ body.dark .boton-confirmar-principal {
     height: 50%;
     align-items: center;
     width: 67vw;
+    
   }
 
   main{
@@ -107,9 +108,32 @@ body.grey .info-container-principal {
     background-color: $background-grey-mode;
     border: 2px solid $text-grey-mode;
 }
-body.dark .info-container-principal {
-  background-color: $escala-grises-border;
-}
+// body.dark .info-container-principal {
+//   background-color: $escala-grises-border;
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

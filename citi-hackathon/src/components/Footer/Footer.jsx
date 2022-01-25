@@ -8,6 +8,16 @@ import tamañoLetra from "../../assets/Font.png";
 
 
 const Footer = ({ setOpen }) => {
+  
+  function mediumMode() {
+    if (document.body.className === 'medium-mode') {
+      document.body.className = ''
+      return
+    } else {
+      document.body.className = 'medium-mode'
+    }
+  }
+
   const navigate = useNavigate();
   const handleAsistenteVoz = () => {
     navigate("/VoiceAssistant");
@@ -17,6 +27,8 @@ const Footer = ({ setOpen }) => {
     setOpen(true);
   }
   return (
+
+    
     <footer>
 
       <div
@@ -32,7 +44,7 @@ const Footer = ({ setOpen }) => {
       <div
         className="icon-footer-font"
         alt="icono para aumentar el tamaño de letra"
-        id="font-down"
+        id="font-down" onClick={mediumMode}
       />
     </footer>
   );

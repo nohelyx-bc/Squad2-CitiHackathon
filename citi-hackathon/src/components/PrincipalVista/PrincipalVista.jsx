@@ -20,7 +20,7 @@ const PrincipalVista = (propsUser, {fontSize}) => {
            <section key={user.id} className="content-items">  */}
       <h3 style={{
           fontSize: `${fontSize}px`
-        }} className="titulos-predeterminado">BIENVENIDO</h3>
+        }} className="titulos-predeterminado">¡Hola!</h3>
       <h3>{propsUser.userInfo.nombre_titular}</h3>
       <section className="container-botones-principal">
         <button className="boton-confirmar-principal" onClick={handleTransferencias}>TRANSFERENCIA</button>

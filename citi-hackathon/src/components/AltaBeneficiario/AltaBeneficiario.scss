@@ -8,6 +8,9 @@
   font-size: 1.1rem;
   align-self: flex-start;
 }
+body.grey .AltaBeneficiario-label {
+  color: $text-grey-mode;
+}
 body.small-mode  .AltaBeneficiario-label{
   font-size: 1.7rem; 
 }
@@ -28,7 +31,9 @@ body.big-mode  .AltaBeneficiario-label{
   font-size: 1.1rem;
   align-self: flex-start;
 }
-
+body.grey .AltaBeneficiario-legend {
+  color: $text-grey-mode;
+}
 body.small-mode  .AltaBeneficiario-legend{
   font-size: 1.7rem; 
 }
@@ -55,6 +60,13 @@ body.big-mode  .AltaBeneficiario-legend{
   transition: 0.5s; 
   text-align: center;
   margin-bottom: 2rem;
+  width: 100%;
+  padding: 5px;
+  align-self: center;
+}
+body.grey .boton-guardar {
+  color: $text-grey-mode;
+  border: 2px solid $text-grey-mode;
 }
 
 body.dark .boton-guardar{
