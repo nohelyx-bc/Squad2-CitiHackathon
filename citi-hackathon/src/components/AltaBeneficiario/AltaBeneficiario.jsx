@@ -10,7 +10,6 @@ const AltaBeneficiario = ({addBeneficiary}) => {
   const [montoMaxState, setMontoMax] = useState({});
   const [numCuentaState, setNumCuenta] = useState({});
   const [nombreTitularState, setNombreTitular] = useState({});
-  const handleRegresar = () => {navigate("/");};
   const handleTipoCuenta = (e) => setTipoCuenta({ ...tipoCuentaState, tipoCuenta: e.target.value });
   const handleMontoMax = (e) => setMontoMax({ ...montoMaxState, montoMax: e.target.value });
   const handleNumCuenta = (e) => setNumCuenta({ ...numCuentaState, numCuenta: e.target.value });
@@ -25,7 +24,7 @@ const AltaBeneficiario = ({addBeneficiary}) => {
 
 
   const handleTransferencia = () => {
-    navigate("/Transferencias");
+    navigate("/");
   };
 
   return (
@@ -37,10 +36,11 @@ const AltaBeneficiario = ({addBeneficiary}) => {
             AGREGAR CUENTAS A TERCEROS
           </legend>
         <form  action="" className="altaBeneficiario-form info-container"
-        onSubmit={(e) => {
-              e.preventDefault();
-              addBeneficiary(tipoCuenta, montoMax, numCuenta, nombreTitular)
-            }}>
+        // onSubmit={(e) => {
+        //       e.preventDefault();
+        //       addBeneficiary(tipoCuenta, montoMax, numCuenta, nombreTitular)
+        //     }}
+        >
 
           <label htmlFor="TipoDeCuenta"  className="AltaBeneficiario-label">TIPO DE CUENTA </label>
           <input 
@@ -70,33 +70,29 @@ const AltaBeneficiario = ({addBeneficiary}) => {
           <input 
           className="montoMax"
           onChange={handleMontoMax}
-          type="number" 
+          type="number"   
           id="MontoMax"
           required />
 
-          {/* <input
+{/* <input
             type="submit"
             name="submit"
             value="Guardar"
             className="boton-guardar"
-            // onSubmit={(e) => {
-            //   e.preventDefault();
-            //   addBeneficiary(tipoCuenta, montoMax, numCuenta, nombreTitular)
-            // }}
-            // addBeneficiary 
-            // onClick={handleTransferencia}
+            onSubmit={(e) => {
+              e.preventDefault();
+             
+              addBeneficiary(tipoCuenta, montoMax, numCuenta, nombreTitular)
+            
+            }}
+            onClick={handleTransferencia}
           ></input> */}
+            
         </form>
-        
-        <section className="botones">
-          <button className="boton-regresar" onClick={handleRegresar}>
-            REGRESAR
-          </button>
-          <button className="boton-confirmar" >
-            {/* onClick={handleConfirmar} */}
-            GUARDAR
-          </button>
-        </section>
+        <button className="boton-confirmar" onClick={(e) => {
+              addBeneficiary(tipoCuenta, montoMax, numCuenta, nombreTitular)
+              handleTransferencia()
+          }} >GUARDAR</button>
       </div>
       <Footer />
     </>

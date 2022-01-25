@@ -3,38 +3,38 @@ import { useNavigate } from "react-router-dom";
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 
-const ConfirmacionTransferencia = ({importe,concepto, onAdd}) => {
-console.log(importe)
-//falta pasar datos
+const ConfirmacionTransferencia = ({ importeState, conceptoState, beneficiarioState, cuentaOrigen, saldoNew, onAdd }) => {
 
   const navigate = useNavigate();
-  const handleConfirmar = () => {
-    navigate("/");
-  };
+
   const handleRegresar = () => {
     navigate("/Transferencias");
   };
-
+  const handleConfirmar = () => {
+    navigate("/");
+  };
   return (
     <>
       <div className="container-transferencias">
         <Header />
         <h2>TRANSFERENCIA</h2>
-        <h2> HOLA USER</h2>
         <form className="info-container">
           <section className="info-cuenta-origen">
             <p className="center-item">CONFIRMACION</p>
-            <p>PARA: USER_DESTINATARIO</p>
-            <p>DE: CUENTA AHORRO USER</p>
-            <p>MONTO 5.000.00</p>
-            <p>DESCRIPCION: COMIDA</p>
+            <p>PARA: {beneficiarioState}</p>
+            <p>DE: **{cuentaOrigen.slice(12, 16)}</p>
+            <p>DESCRIPCION: {conceptoState}</p>
+            <p>MONTO: $ {importeState}</p>
           </section>
         </form>
         <section className="botones">
           <button className="boton-regresar" onClick={handleRegresar}>
             REGRESAR
           </button>
-          <button className="boton-confirmar" onClick={handleConfirmar}>
+          <button className="boton-confirmar" onClick={(e) => {
+            onAdd(importeState, conceptoState, beneficiarioState, cuentaOrigen, saldoNew);
+            handleConfirmar()
+          }} >
             CONFIRMAR
           </button>
         </section>

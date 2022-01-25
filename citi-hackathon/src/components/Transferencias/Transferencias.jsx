@@ -1,36 +1,36 @@
 /* eslint-disable no-unused-vars */
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { helpHttp } from "../../helpers/helpHttp";
 import { useNavigate } from "react-router-dom";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import ConfirmacionTransferencia from "../ConfirmacionTransferencia";
 
-const Transferencias = ({ dataUser ,onAdd }) => {
+const Transferencias = ({ dataUser ,onAdd, validacionImporte, dataBeneficiarios }) => {
+
   const [userInfo, setUserInfo] = useState(...dataUser);
   const [importeState, setImporte] = useState({});
   const [conceptoState, setConcepto] = useState({});
   const [beneficiarioState, setbeneficiario] = useState({});
-  const [saldoState, setSaldo] = useState({});
   const [origenState, setTarjetaOrigen] = useState({});
-  // console.log('estoy en trans',userInfo.beneficiarios)
-
-  // const { importe } = importeState;
+  const [saldoState, setSaldo] = useState({});
+ 
 
   const navigate = useNavigate();
-  //const handleConfirmar = () => {navigate("/ConfirmacionTransferencia"); };
+  const handleConfirmar = () => {navigate("/Confirmar"); };
   const handleRegresar = () => {navigate("/");};
-  const handleconfirmar = () => {navigate("/Confirmar");};
   const handleImporte = (e) => setImporte({ ...importeState, importe: e.target.value });
   const handleConcepto = (e) => setConcepto({ ...conceptoState, concepto: e.target.value });
-  const handleBeneficiario = (e) => setbeneficiario({ ...beneficiarioState, beneficiario: e.target.value });
-  const handleSaldo = (e) => setSaldo({ ...saldoState, saldo: e.target.value });
+  const handleBeneficiario = (e) => setbeneficiario({ ...beneficiarioState, beneficiario: e.target.value })
+ const handleSaldo = (e) => setSaldo({ ...saldoState, saldo: e.target.value });
   const handleTarjetaOrigen = (e) => setTarjetaOrigen({ ...origenState, origen: e.target.value });
 
   const { importe } = importeState;
   const { concepto } = conceptoState;
-  const { beneficiario } = beneficiarioState;//pendiente xq falta cachar el val del select
-  const { saldo } = saldoState; //listo para hacer la actualizacion y validacion
+  const { beneficiario } = beneficiarioState;
+  const { saldo } = saldoState; 
   const { origen } = origenState;
+  
   return (
     <>
       <div className="container-transferencias">
@@ -39,14 +39,13 @@ const Transferencias = ({ dataUser ,onAdd }) => {
         <form
           onSubmit={(e) => {
             e.preventDefault();
-            // onAdd(importe,concepto,saldo)
-            
-            // <ConfirmacionTransferencia importe={importeState} concepto={concepto} onAdd={onAdd}/>
-            handleconfirmar();
-            //agregar validacion y metodo para actualizar 
-            //beneficiario 
-            // e.target.reset();
-            // cleanOrder();
+            validacionImporte(importe, beneficiario, concepto).then((res)=>{
+              if(res){
+                handleConfirmar();
+              }else{
+                //error
+              }
+            })
           }}
         >
           
@@ -64,15 +63,14 @@ const Transferencias = ({ dataUser ,onAdd }) => {
            })}; */}
             {/* </select> */}
             {userInfo.tarjetas.map((val) => {
+           
+             
               return (
                 <div key={val.id}>
-                  <p
-                  className="origen"
-                  onChange={handleTarjetaOrigen}>{val.numero_cuenta}</p>
+                  <p  className="origen"
+                  >{val.numero_cuenta}</p>
                   <p>SALDO DISPONIBLE</p>
-                  <p
-                  className="saldo"
-                  onChange={handleSaldo}
+                  <p className="saldo"
                   >$ {val.saldo}</p>
                 </div>
               );
@@ -81,13 +79,13 @@ const Transferencias = ({ dataUser ,onAdd }) => {
 
           </section>
           {/* <input placeholder="BENEFICIARIO"></input> */}
-          <select name="tarjetas" className="tarjeta">
+          <select name="tarjetas" className="tarjeta"  onChange={handleBeneficiario}>
             <option value="Elige">BENEFICIARIO</option>
-            {userInfo.beneficiarios.map((beneficiario) => {
+            {dataBeneficiarios.map((beneficiario) => {
               return (
-                <option className="beneficiario"
-                  onChange={handleBeneficiario}
-                  key={beneficiario.id}
+                <option key={beneficiario.id}
+                  className="beneficiario"
+                 
                   value={beneficiario.nombre_beneficiario}> {beneficiario.nombre_beneficiario}</option>
               );
             })};
@@ -111,7 +109,6 @@ const Transferencias = ({ dataUser ,onAdd }) => {
             REGRESAR
           </button>
           <button className="boton-confirmar" >
-            {/* onClick={handleConfirmar} */}
             CONFIRMAR
           </button>
         </section>
