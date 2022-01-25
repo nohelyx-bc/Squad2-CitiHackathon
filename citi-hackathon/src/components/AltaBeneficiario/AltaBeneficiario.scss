@@ -24,6 +24,8 @@ body.big-mode  .AltaBeneficiario-label{
 }
 
 .AltaBeneficiario-legend {
+  font-family: $primary-font;
+  font-size: 1rem;
   color: $secondary;
   letter-spacing: 0.05em;
   transition: 0.5s;
