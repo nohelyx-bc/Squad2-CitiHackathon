@@ -64,6 +64,19 @@ body.small-mode .boton-confirmar-principal {
   font-size: 1.7rem; 
 }
 
+.border{
+  display: flex;
+  // border-radius: 10px;
+  padding: 1rem;
+  flex-direction: column;
+  background-color: $primary;
+  border: 1px solid $border-div-ligth;
+  margin: 1rem;
+  border-radius: 12px;
+  height: 50%;
+  align-items: center;
+}
+
 body.medium-mode .boton-confirmar-principal {
   font-size: 2rem;
   height: 14vh;

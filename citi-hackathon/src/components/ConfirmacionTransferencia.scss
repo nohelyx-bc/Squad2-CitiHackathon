@@ -23,7 +23,7 @@ h2 {
   border: 1px solid $border-div-ligth;
   padding: 2rem;
   margin: 1rem;
-  width: 80%;
+  width: 76%;
   border-radius: 12px;
   height: 80%;
   align-items: center;
@@ -37,6 +37,14 @@ body.grey .info-container {
   display: flex;
   flex-direction: column;
 }
+// p {
+//   color: $secondary-font-color;
+//   font-family: $primary-font;
+//   font-size: 1.3rem;
+//   letter-spacing: 0.05em;
+//   line-height: 4rem;
+//   text-align: start;
+// }
 p {
   color: $secondary-font-color;
   font-family: $primary-font;
