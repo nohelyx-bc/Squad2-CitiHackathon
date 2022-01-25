@@ -1,10 +1,10 @@
 # Squad Craft Coders - Citibanamex
 
 <section> <img src="https://user-images.githubusercontent.com/7150868/150906181-39b08936-1c84-4c3d-8739-147e74e8193a.png" alt="logo de equipo craft coders" width= 90px height= 90px > 
-    <img src="https://user-images.githubusercontent.com/7150868/150906429-bb815142-fffb-43f9-853b-007e07f27e75.png" alt="logo de citibanamex"> ![image](https://user-images.githubusercontent.com/62182593/151021361-f76edd13-6fb1-4f18-9c79-dd35faedfd8f.png)
+    <img src="https://user-images.githubusercontent.com/7150868/150906429-bb815142-fffb-43f9-853b-007e07f27e75.png" alt="logo de citibanamex"> 
 </section>
 
-
+![image](https://user-images.githubusercontent.com/62182593/151021361-f76edd13-6fb1-4f18-9c79-dd35faedfd8f.png)
 
 ## **RETO 2022: “Inclusión digital para personas con discapacidad visual:** transacciones entre cuentas de Citibanamex”
 
@@ -24,7 +24,9 @@ En la actualidad, no muchas aplicaciones presentan las normas adecuadas para que
 #### 2. Resumen del Proyecto
 Se realizó investigación en diversos recursos con el fin de crear un ejercicio de empatía hacia los posibles usuarios de nuestra aplicación con el fin de mejorar su experiencia de usuario. Uno de los principales puntos a considerar fue el espectro que abarca la discapacidad visual, ya que esta no necesariamente es únicamente la pérdida total de la visión, sino que puede ser condiciones tales como el daltonismo, debilidad visual, dislexia, etc.
 
-De manera que al tener que abarcar todo un espectro la solución a nuestro reto también debía ser diversa; para dar con una solución adecuada buscamos integrar cada solución individual a cada limitación que pudieran tener nuestros usuarios. De modo que seleccionamos diversas paletas de color que favorezcan a usuarios que tengan dificultades para diferencias colores, así como 
+De manera que al tener que abarcar todo un espectro la solución a nuestro reto también debía ser diversa; para dar con una solución adecuada buscamos integrar cada solución individual a cada limitación que pudieran tener nuestros usuarios. De modo que seleccionamos diversas paletas de color que favorezcan a usuarios que tengan dificultades para diferenciar colores, así como para los usuarios que tengan alguna debilidad visual. Otra funcionalidad que se implementó fue el poder cambiar el tamaño de la fuente en la aplicación, esto para los usuarios que les facilite la lectura de esta forma. 
+
+En cuanto a nuestros usuarios con limitación total de la vista se incorporó el uso de comandos de voz para que puedan acceder a la sección de transferencias únicamente hablando y así facilitarles lo mejor posible esta función tan esencial. Igualmente se implementó de etiquetas semánticas en todo nuestro código para facilitarles el lector de pantallas por medio del navegador.  
 
 #### 3. Historias de Usuario
 
