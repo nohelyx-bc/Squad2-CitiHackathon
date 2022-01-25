@@ -21,8 +21,10 @@ Con el objetivo de buscar la inclusividad y la accesibilidad digital se planteó
 En la actualidad, no muchas aplicaciones presentan las normas adecuadas para que sean accesibles para usuarios con necesidades adicionales a la media, ya que aproximadamente el 47% de las apps no presentan pautas establecidas en cuanto a inclusividad. 
 
 #### 2. Resumen del Proyecto
+Se realizó investigación en diversos recursos con el fin de crear un ejercicio de empatía hacia los posibles usuarios de nuestra aplicación con el fin de mejorar su experiencia de usuario. Uno de los principales puntos a considerar fue el espectro que abarca la discapacidad visual, ya que esta no necesariamente es únicamente la pérdida total de la visión, sino que puede ser condiciones tales como el daltonismo, debilidad visual, dislexia, etc.
 
-
+De manera que al tener que abarcar todo un espectro la solución a nuestro reto también debía ser diversa
+.
 
 #### 3. Historias de Usuario
 
