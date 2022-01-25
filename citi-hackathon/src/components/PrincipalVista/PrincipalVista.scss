@@ -5,7 +5,8 @@ h3,h4 {
   font-family: $primary-font;
   letter-spacing: 0.03em;
   line-height: 2em;
-  padding: 0 0 0 0;
+  padding: 0.5rem 0 0.5rem 0;
+  text-transform: uppercase;
 }
 body.grey h3 {
   color: $text-grey-mode;
@@ -13,6 +14,30 @@ body.grey h3 {
 body.grey h4 {
   color: $text-grey-mode;
 
+}
+body.small-mode h3 {
+  font-size: 1.7rem; 
+}
+
+body.medium-mode h3 {
+  font-size: 2rem; 
+  line-height: 1.5em; 
+}
+
+body.big-mode h3 {
+  font-size: 2rem;
+  line-height: 1.5em; 
+}
+body.small-mode h4 {
+  font-size: 1.7rem; 
+}
+
+body.medium-mode h4 {
+  font-size: 2rem; 
+}
+
+body.big-mode h4 {
+  font-size: 2rem; 
 }
 .container-botones-principal {
   display: flex;
@@ -22,7 +47,7 @@ body.grey h4 {
 }
 .boton-confirmar-principal {
   margin: 10px;
-  width: 91%;
+  width: 95%;
   padding: 5px 5px;
   font-weight: 600;
   font-size: 1.5rem;
@@ -33,7 +58,20 @@ body.grey h4 {
   border-color: $border-color-primary;
   box-shadow: 6px 4px 4px $shadow-button;
   cursor: pointer;
-  height: 10vh;
+  height: 15vh;
+}
+body.small-mode .boton-confirmar-principal {
+  font-size: 1.7rem; 
+}
+
+body.medium-mode .boton-confirmar-principal {
+  font-size: 2rem;
+  height: 14vh;
+}
+
+body.big-mode .boton-confirmar-principal {
+  font-size: 2rem; 
+  height: 18vh;
 }
 body.grey .boton-confirmar-principal {
   background-color: $background-grey-mode;
@@ -56,6 +94,7 @@ body.dark .boton-confirmar-principal {
     height: 50%;
     align-items: center;
     width: 67vw;
+    
   }
 
   main{
@@ -69,9 +108,32 @@ body.grey .info-container-principal {
     background-color: $background-grey-mode;
     border: 2px solid $text-grey-mode;
 }
-body.dark .info-container-principal {
-  background-color: $escala-grises-border;
-}
+// body.dark .info-container-principal {
+//   background-color: $escala-grises-border;
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

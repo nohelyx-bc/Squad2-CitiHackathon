@@ -42,6 +42,7 @@ const ConfirmacionTransferencia = () => {
       <Sidebar open={open} setOpen={setOpen}/>
     </>
   );
+  
 };
 
 export default ConfirmacionTransferencia;

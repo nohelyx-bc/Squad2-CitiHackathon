@@ -3,20 +3,48 @@
 .AltaBeneficiario-label {
   color: $secondary;
   letter-spacing: 0.05em;
-  margin-left: 1rem;
   transition: 0.5s;
   font-weight: bold;
   font-size: 1.1rem;
+  align-self: flex-start;
+}
+body.grey .AltaBeneficiario-label {
+  color: $text-grey-mode;
+}
+body.small-mode  .AltaBeneficiario-label{
+  font-size: 1.7rem; 
+}
+
+body.medium-mode  .AltaBeneficiario-label{
+  font-size: 2rem; 
+}
+
+body.big-mode  .AltaBeneficiario-label{
+  font-size: 2.3rem; 
 }
 
 .AltaBeneficiario-legend {
   color: $secondary;
   letter-spacing: 0.05em;
-  margin-left: 1rem;
   transition: 0.5s;
   font-weight: bold;
   font-size: 1.1rem;
-  margin-bottom: 1rem;
+  align-self: flex-start;
+}
+body.grey .AltaBeneficiario-legend {
+  color: $text-grey-mode;
+}
+body.small-mode  .AltaBeneficiario-legend{
+  font-size: 1.7rem; 
+}
+
+body.medium-mode  .AltaBeneficiario-legend{
+  font-size: 2rem; 
+
+}
+
+body.big-mode  .AltaBeneficiario-legend{
+  font-size: 2.3rem; 
 }
 
 .boton-guardar {
@@ -32,6 +60,13 @@
   transition: 0.5s; 
   text-align: center;
   margin-bottom: 2rem;
+  width: 100%;
+  padding: 5px;
+  align-self: center;
+}
+body.grey .boton-guardar {
+  color: $text-grey-mode;
+  border: 2px solid $text-grey-mode;
 }
 
 body.dark .boton-guardar{
