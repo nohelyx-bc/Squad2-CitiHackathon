@@ -38,7 +38,7 @@ const AltaBeneficiario = ({fontSize}) => {
           <input
             type="submit"
             name="submit"
-            value="Guardar"
+            value="CONFIRMAR"
             className="boton-guardar"
             onClick={handleTransferencia}
           ></input>

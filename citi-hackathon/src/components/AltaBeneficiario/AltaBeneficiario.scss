@@ -3,19 +3,43 @@
 .AltaBeneficiario-label {
   color: $secondary;
   letter-spacing: 0.05em;
-  margin-left: 1rem;
   transition: 0.5s;
   font-weight: bold;
   font-size: 1.1rem;
+  align-self: flex-start;
+}
+body.small-mode  .AltaBeneficiario-label{
+  font-size: 1.7rem; 
+}
+
+body.medium-mode  .AltaBeneficiario-label{
+  font-size: 2rem; 
+}
+
+body.big-mode  .AltaBeneficiario-label{
+  font-size: 2.3rem; 
 }
 
 .AltaBeneficiario-legend {
   color: $secondary;
   letter-spacing: 0.05em;
-  margin-left: 1rem;
   transition: 0.5s;
   font-weight: bold;
   font-size: 1.1rem;
+  align-self: flex-start;
+}
+
+body.small-mode  .AltaBeneficiario-legend{
+  font-size: 1.7rem; 
+}
+
+body.medium-mode  .AltaBeneficiario-legend{
+  font-size: 2rem; 
+
+}
+
+body.big-mode  .AltaBeneficiario-legend{
+  font-size: 2.3rem; 
 }
 
 .boton-guardar {
