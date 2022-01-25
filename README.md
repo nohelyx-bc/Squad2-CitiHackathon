@@ -1,7 +1,8 @@
 # Squad Craft Coders - Citibanamex
 
 <section> <img src="https://user-images.githubusercontent.com/7150868/150906181-39b08936-1c84-4c3d-8739-147e74e8193a.png" alt="logo de equipo craft coders" width= 90px height= 90px > 
-    <img src="https://user-images.githubusercontent.com/7150868/150906429-bb815142-fffb-43f9-853b-007e07f27e75.png" alt="logo de citibanamex"> </section>
+    <img src="https://user-images.githubusercontent.com/7150868/150906429-bb815142-fffb-43f9-853b-007e07f27e75.png" alt="logo de citibanamex"> ![image](https://user-images.githubusercontent.com/62182593/151021361-f76edd13-6fb1-4f18-9c79-dd35faedfd8f.png)
+</section>
 
 
 
@@ -23,8 +24,7 @@ En la actualidad, no muchas aplicaciones presentan las normas adecuadas para que
 #### 2. Resumen del Proyecto
 Se realizó investigación en diversos recursos con el fin de crear un ejercicio de empatía hacia los posibles usuarios de nuestra aplicación con el fin de mejorar su experiencia de usuario. Uno de los principales puntos a considerar fue el espectro que abarca la discapacidad visual, ya que esta no necesariamente es únicamente la pérdida total de la visión, sino que puede ser condiciones tales como el daltonismo, debilidad visual, dislexia, etc.
 
-De manera que al tener que abarcar todo un espectro la solución a nuestro reto también debía ser diversa
-.
+De manera que al tener que abarcar todo un espectro la solución a nuestro reto también debía ser diversa; para dar con una solución adecuada buscamos integrar cada solución individual a cada limitación que pudieran tener nuestros usuarios. De modo que seleccionamos diversas paletas de color que favorezcan a usuarios que tengan dificultades para diferencias colores, así como 
 
 #### 3. Historias de Usuario
 
