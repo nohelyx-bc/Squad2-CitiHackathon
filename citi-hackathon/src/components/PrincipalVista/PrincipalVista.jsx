@@ -31,12 +31,12 @@ const PrincipalVista = (propsUser, { fontSize }) => {
         <button className="boton-confirmar-principal" onClick={handleTransferencias} >TRANSFERENCIA</button>
         <button className="boton-confirmar-principal" onClick={handleCuentasTerceros}>AGREGAR CUENTAS DE TERCEROS</button>
       </section>
-
+      <section className="info-container">
       {propsUser.userInfo.tarjetas.map((val) => {
 
         return (
-          <div key={val.id} className="border">
-            <section className="content-items">
+          
+            <section key={val.id} className="content-items">
               <p style={{
                 fontSize: `${fontSize}px`
               }}>{val.tipo_tarjeta}</p>
@@ -50,9 +50,10 @@ const PrincipalVista = (propsUser, { fontSize }) => {
               </section>
 
             </section>
-          </div>
+          
         );
       })}
+      </section>
     </main>
   );
 };
