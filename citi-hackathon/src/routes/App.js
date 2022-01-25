@@ -90,7 +90,7 @@ const App = () => {
     }
     else {
       // setData(response)
-      window.location.reload(true);
+      // window.location.reload(true);
     }
   };
 
@@ -132,7 +132,7 @@ const App = () => {
         console.log(res);
         if (!res.err) {
           console.log('echo')
-           window.location.reload(true);
+          //  window.location.reload(true);
         } else {
           // setError(res);
         }
