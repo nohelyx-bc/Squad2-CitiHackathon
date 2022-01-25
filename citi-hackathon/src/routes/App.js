@@ -25,8 +25,7 @@ const App = () => {
   const [conceptoState, setConcepto] = useState(null);
   const [beneficiarioState, setBeneficiario] = useState(null);
 
-  // let url = `${process.env.REACT_APP_JSON_SERVER_USER}`;?id=1232
-  // let url_benfeiciarios=`https://citibanamex-hackathon.herokuapp.com/beneficiarios?=id_usuario=${user}`
+  // let url = `${process.env.REACT_APP_JSON_SERVER_USERS}?id=${user}`
 
   let url = `https://citibanamex-hackathon.herokuapp.com/User?id=${user}`
   let url_benfeiciarios = `https://citibanamex-hackathon.herokuapp.com/beneficiarios?=id_usuario=${user}`
@@ -91,7 +90,7 @@ const App = () => {
     }
     else {
       // setData(response)
-      // window.location.reload(true);
+      window.location.reload(true);
     }
   };
 
@@ -133,7 +132,7 @@ const App = () => {
         console.log(res);
         if (!res.err) {
           console.log('echo')
-          //  window.location.reload(true);
+           window.location.reload(true);
         } else {
           // setError(res);
         }
