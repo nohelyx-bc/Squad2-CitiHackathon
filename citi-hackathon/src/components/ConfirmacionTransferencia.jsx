@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 
-const ConfirmacionTransferencia = ({ importeState, conceptoState, beneficiarioState, cuentaOrigen, saldoNew, onAdd }) => {
+const ConfirmacionTransferencia = ({ importeState, conceptoState, beneficiarioState, cuentaOrigen, saldoNew,updateSaldo, onAdd }) => {
 
   const navigate = useNavigate();
 
@@ -32,6 +32,7 @@ const ConfirmacionTransferencia = ({ importeState, conceptoState, beneficiarioSt
             REGRESAR
           </button>
           <button className="boton-confirmar" onClick={(e) => {
+            updateSaldo(importeState)
             onAdd(importeState, conceptoState, beneficiarioState, cuentaOrigen, saldoNew);
             handleConfirmar()
           }} >

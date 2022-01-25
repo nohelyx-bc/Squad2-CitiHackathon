@@ -64,7 +64,35 @@ const App  = () => {
 
   }, [url]);
 
-  console.log(dataBeneficiarios)
+  // console.log(data[0].tarjetas[0])
+
+  const updateSaldo =  async (importeBeneficiario) => {
+    console.log(typeof(importeBeneficiario))
+    const id = Date.now();
+    const endpoint = `https://citibanamex-hackathon.herokuapp.com/User/1230`;
+    let options = {
+      body: {
+        tarjetas: [{
+          id: id,
+          tipo_tarjeta: data[0].tarjetas[0].tipo_tarjeta,
+          numero_cuenta: data[0].tarjetas[0].numero_cuenta,
+          saldo: parseInt(saldoNew)-parseInt(importeBeneficiario),
+          img_tarjeta: data[0].tarjetas[0].img_tarjeta
+        }]
+      
+      },
+      headers: { "content-type": "application/json" },
+    };
+    const response = await api.patch(endpoint, options);
+      if (response.err) {
+        console.log('hola')
+        // return setError(response);
+      }
+      else{
+        // setData(response)
+        // window.location.reload(true);
+      }
+  };
 
   
 const validacionImporte= async (importe,beneficiario, concepto)=>{
@@ -104,6 +132,7 @@ const validacionImporte= async (importe,beneficiario, concepto)=>{
         console.log(res);
         if (!res.err) {
          console.log('echo')
+        //  window.location.reload(true);
         } else {
           // setError(res);
         }
@@ -154,6 +183,7 @@ const validacionImporte= async (importe,beneficiario, concepto)=>{
         beneficiarioState={beneficiarioState} 
         cuentaOrigen={cuentaOrigen} 
         saldoNew={saldoNew}
+        updateSaldo={updateSaldo}
         onAdd={onAdd}/>} />
         <Route exact path="/Header" element={<Header />} />
         <Route exact path="/Footer" element={<Footer />} />
