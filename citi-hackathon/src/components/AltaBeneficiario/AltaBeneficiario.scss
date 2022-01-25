@@ -54,6 +54,7 @@ body.big-mode  .AltaBeneficiario-legend{
   cursor: pointer;
   transition: 0.5s; 
   text-align: center;
+  margin-bottom: 2rem;
 }
 
 body.dark .boton-guardar{
@@ -64,4 +65,8 @@ body.dark .boton-guardar{
 body.grey .boton-guardar{
   background-color: $background-grey-mode;
   box-shadow: none;
+}
+.align-left {
+  display: flex;
+  justify-content: center;
 }

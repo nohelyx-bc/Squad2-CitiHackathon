@@ -4,7 +4,6 @@ $assetPathGrey : "/assets/Logo-gris.png";
 $assetPathBlue : "/assets/Logo-predeterminado.png";
 
 header{
-    background-color: $primary;
     display: flex;
     justify-content: center;
     padding: 15px 15px 0px 15px;
@@ -29,7 +28,7 @@ body.dark .img-logo{
     background-color: #AAAAAA;
   }
   body.dark header{
-    background-color: $background-dark-mode;;
+    background-color: $background-dark-mode;
   }
 
 body.grey header{

@@ -1,4 +1,4 @@
-import React from "react";
+import {React, useState} from "react";
 //import { createSpeechlySpeechRecognition } from '@speechly/speech-recognition-polyfill';
 import SpeechRecognition, {
   useSpeechRecognition,
@@ -6,12 +6,14 @@ import SpeechRecognition, {
 import { useNavigate } from "react-router-dom";
 import Footer from "./Footer/Footer";
 import Header from "./Header/Header";
+import Sidebar from "./Footer/Sidebar";
 
 // const appId = '<INSERT_SPEECHLY_APP_ID_HERE>';
 // const SpeechlySpeechRecognition = createSpeechlySpeechRecognition(appId);
 // SpeechRecognition.applyPolyfill(SpeechlySpeechRecognition);
 
 const VoiceAssistant = () => {
+  const [open, setOpen] = useState(false);
   const navigate=useNavigate()
   const handleRegresar = () => {
     navigate("/");
@@ -49,7 +51,7 @@ const VoiceAssistant = () => {
     <>
       <div className="container-transferencias">
         <Header />
-        <p>Microfono: {listening ? "Encendido" : "Apagado"}</p>
+        <p>MICROFONO: {listening ? "ENCENDIDO" : "APAGADO"}</p>
         {/* <button
           onClick={startListening({ continuous: true, language: "es-MX" })}
           onTouchStart={startListening({ continuous: true, language: "es-MX" })}
@@ -65,20 +67,21 @@ const VoiceAssistant = () => {
             className="boton-confirmar"
             onClick={SpeechRecognition.startListening}
           >
-            Start
+            INICIAR
           </button>
           <button
             className="boton-confirmar"
             onClick={SpeechRecognition.stopListening}
-          >Stop</button>
+          >DETENER</button>
           <button className="boton-confirmar" onClick={resetTranscript}>
-            Reset
+            REINICIAR
           </button>
         </section>
         <p>{transcript}</p>
-        <button className="boton-regresar" onClick={handleRegresar}>Regresar</button>
+        <button className="boton-regresar" onClick={handleRegresar}>REGRESAR</button>
       </div>
-      <Footer />
+      <Footer setOpen={setOpen}/>
+      <Sidebar open={open} setOpen={setOpen}/>
     </>
   );
 };

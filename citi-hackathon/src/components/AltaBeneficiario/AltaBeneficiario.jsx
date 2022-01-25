@@ -34,14 +34,16 @@ const AltaBeneficiario = ({fontSize}) => {
           <label htmlFor="MontoMax" className="AltaBeneficiario-label">
             MONTO MAXIMO A TRANSFERIR
           </label>
-          <input type="text" id="MontoMax" />
+          <input type="text" id="MontoMax"/>
+          <div>
           <input
             type="submit"
             name="submit"
             value="CONFIRMAR"
             className="boton-guardar"
             onClick={handleTransferencia}
-          ></input>
+          />
+          </div>
         </form>
       </div>
       <Footer setOpen={setOpen}/>
