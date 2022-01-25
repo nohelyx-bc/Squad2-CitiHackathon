@@ -62,5 +62,5 @@ Si se desea usar el asistente de voz y los comandos de voz es necesario que se c
 
 
 
-![Captura de Pantalla 2022-01-25 a la(s) 11 15 39](https://user-images.githubusercontent.com/86631102/151026566-580e2787-5664-4964-bb13-58e0e290c0c1.png)
+
 
