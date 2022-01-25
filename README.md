@@ -2,7 +2,7 @@
 
 <section> <img src="https://user-images.githubusercontent.com/7150868/150906181-39b08936-1c84-4c3d-8739-147e74e8193a.png" alt="logo de equipo craft coders" width= 90px height= 90px > 
     <img src="https://user-images.githubusercontent.com/7150868/150906429-bb815142-fffb-43f9-853b-007e07f27e75.png" alt="logo de citibanamex"> 
-     <img src="https://user-images.githubusercontent.com/62182593/151021361-f76edd13-6fb1-4f18-9c79-dd35faedfd8f.png" alt="logo universal de la discapacidad"> 
+     <img src="https://user-images.githubusercontent.com/62182593/151021361-f76edd13-6fb1-4f18-9c79-dd35faedfd8f.png" alt="logo universal de la discapacidad" width= 90px height= 90px > 
 </section>
 
 
@@ -65,11 +65,28 @@ Nuestro mínimo producto viable cuenta con un menú el cual le otorga al usuario
 - Modo oscuro.
 - Escala de grises
 - Predeterminada
+
 De igual manera, este menú contiene tres opciones para cambiarle el tamaño de fuente a la aplicación para que se seleccione la que mejor se le acomode al usuario y una _X_ con la que se puede cerrar el menú una vez que se haya seleccionado la opción deseada. A este menú se puede acceder en el botón de la lado izquierdo del menú que se encuentra en el footer. 
+
 ![image](https://user-images.githubusercontent.com/62182593/151025627-22c965b6-b1e7-4230-bf6d-4d2f982bf946.png)
 
 El menú desplegado se ve de la siguiente manera, se diseñó de forma que sean lo más claras posibles las funciones.
+
 ![image](https://user-images.githubusercontent.com/62182593/151026180-494248d1-c333-4f97-87cf-15567b6e7869.png)
+
+Para acceder al menú de comandos de voz se hace a través de la siguiente opción en el menú de footer.
+
+![image](https://user-images.githubusercontent.com/62182593/151026906-fa2c7de8-cbca-417a-b136-0bc4ced74b09.png)
+
+Una vez seleccionada la opción se redirigirá a una página que luce de la siguiente manera: 
+
+![image](https://user-images.githubusercontent.com/62182593/151027351-ff5b2c02-689f-4d51-9a85-21c04218d2c5.png)
+
+Una vez que se ha accedido a dicha página se presiona la opción "Iniciar" para activar el comando de voz, para este se usan las palabras **"Open transferencias"** y este desplegará el menú para realizar una transferencia. 
+
+![image](https://user-images.githubusercontent.com/62182593/151027793-4e358cc8-bcc0-4b7d-9092-f298d70a20da.png)
+
+**Limitaciones de uso:** El uso de comandos de voz se limita con el navegador _Google Chrome_ ya que no tiene la funcionalidad adecuada con otros.
 
 
 #### 6. Despliegue
