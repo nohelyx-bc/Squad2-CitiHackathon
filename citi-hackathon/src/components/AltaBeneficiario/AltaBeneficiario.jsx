@@ -1,9 +1,11 @@
-import React from "react";
+import {React, useState} from "react";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import { useNavigate } from 'react-router-dom';
+import Sidebar from "../Footer/Sidebar";
 
 const AltaBeneficiario = ({fontSize}) => {
+  const [open, setOpen] = useState(false);
   const navigate = useNavigate();
   const handleTransferencia = () => {
     navigate("/Transferencias");
@@ -32,17 +34,20 @@ const AltaBeneficiario = ({fontSize}) => {
           <label htmlFor="MontoMax" className="AltaBeneficiario-label">
             MONTO MAXIMO A TRANSFERIR
           </label>
-          <input type="text" id="MontoMax" />
+          <input type="text" id="MontoMax"/>
+          <div>
           <input
             type="submit"
             name="submit"
-            value="Guardar"
+            value="CONFIRMAR"
             className="boton-guardar"
             onClick={handleTransferencia}
-          ></input>
+          />
+          </div>
         </form>
       </div>
-      <Footer />
+      <Footer setOpen={setOpen}/>
+      <Sidebar open={open} setOpen={setOpen}/>
     </>
   );
 };

@@ -1,26 +1,34 @@
-import React from "react";
+import {React, useState} from "react";
 //import { createSpeechlySpeechRecognition } from '@speechly/speech-recognition-polyfill';
 import SpeechRecognition, {
   useSpeechRecognition,
 } from "react-speech-recognition";
+import { useNavigate } from "react-router-dom";
 import Footer from "./Footer/Footer";
 import Header from "./Header/Header";
+import Sidebar from "./Footer/Sidebar";
 
 // const appId = '<INSERT_SPEECHLY_APP_ID_HERE>';
 // const SpeechlySpeechRecognition = createSpeechlySpeechRecognition(appId);
 // SpeechRecognition.applyPolyfill(SpeechlySpeechRecognition);
 
 const VoiceAssistant = () => {
+  const [open, setOpen] = useState(false);
+  const navigate=useNavigate()
+  const handleRegresar = () => {
+    navigate("/");
+  };
+
   const commands = [
     { command: "reset", callback: ({ resetTranscript }) => resetTranscript() },
     {
       command: "open *",
       callback: (site) => {
-        window.open("http://" + site);
+        window.open("/" + site);
       },
     },
     {
-      command: "cambiar fondo a *",
+      command: "change background colour to *",
       callback: (color) => {
         document.body.style.background = color;
       },
@@ -43,8 +51,8 @@ const VoiceAssistant = () => {
     <>
       <div className="container-transferencias">
         <Header />
-        <p>Microfono: {listening ? "Encendido" : "Apagado"}</p>
-        <button
+        <p>MICROFONO: {listening ? "ENCENDIDO" : "APAGADO"}</p>
+        {/* <button
           onClick={startListening({ continuous: true, language: "es-MX" })}
           onTouchStart={startListening({ continuous: true, language: "es-MX" })}
           onMouseDown={startListening({ continuous: true, language: "es-MX" })}
@@ -53,11 +61,27 @@ const VoiceAssistant = () => {
           className="boton-regresar"
         >
          Presione para hablar 
-        </button>
-        <button className="boton-confirmar" onClick={resetTranscript}>Reset</button>
+        </button> */}
+        <section className="info-container voice">
+          <button
+            className="boton-confirmar"
+            onClick={SpeechRecognition.startListening}
+          >
+            INICIAR
+          </button>
+          <button
+            className="boton-confirmar"
+            onClick={SpeechRecognition.stopListening}
+          >DETENER</button>
+          <button className="boton-confirmar" onClick={resetTranscript}>
+            REINICIAR
+          </button>
+        </section>
         <p>{transcript}</p>
+        <button className="boton-regresar" onClick={handleRegresar}>REGRESAR</button>
       </div>
-      <Footer />
+      <Footer setOpen={setOpen}/>
+      <Sidebar open={open} setOpen={setOpen}/>
     </>
   );
 };

@@ -1,6 +1,10 @@
 $assetPathWhite : "/assets/Logo-blanco.png";
 $assetPathGrey : "/assets/Logo-gris.png";
 $assetPathBlue : "/assets/Logo-azul.png";
+$assetPathFontGrey : "/assets/font-grey.png";
+$assetPathFontPred : "/assets/font-pred.png";
+$assetPathFontDark : "/assets/font-dark.png";
+
 * {
   margin: 0px;
   padding: 0px;
@@ -22,10 +26,10 @@ body.dark #sidebar {
   background: $secondary-dark;
 }
 
-body.grey #sidebar {
+// body.grey #sidebar {
 
   
-}
+// }
 
 .close {
   position: absolute;
@@ -144,7 +148,7 @@ body.dark .btn-title {
   cursor:pointer;
 }
 body.dark .btn-predefinida {
-  box-shadow: 6px 4px 4px black;
+  box-shadow: 2px 2px 2px $background-dark-mode;
 }
 .center-item {
  display:flex;
@@ -164,7 +168,22 @@ body.dark .btn-predefinida {
   display: flex;
   justify-content: space-evenly;
   cursor: pointer;
+  background-image: url($assetPathFontPred);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
+
+body.dark .icon-pequeño {
+  // background-image: url($assetPathFontDark);
+  background-image: none;
+}
+
+body.grey .icon-pequeño {
+  // background-image: url($assetPathFontGrey);
+  background-image: none;
+}
+
 .icon-mediano{
   margin: 5px;
   height: 4rem;
@@ -172,7 +191,21 @@ body.dark .btn-predefinida {
   display: flex;
   justify-content: space-evenly;
   cursor: pointer;
+  background-image: url($assetPathFontPred);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
+body.dark .icon-mediano {
+  // background-image: url($assetPathFontDark);
+  background-image: none;
+}
+
+body.grey .icon-mediano {
+  // background-image: url($assetPathFontGrey);
+  background-image: none;
+}
+
 .icon-grande{
   margin: 5px;
   height: 4.5rem;
@@ -180,4 +213,29 @@ body.dark .btn-predefinida {
   display: flex;
   justify-content: space-evenly;
   cursor: pointer;
+  background-image: url($assetPathFontPred);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+body.dark .icon-grande {
+  background-image: url($assetPathFontDark);
+  background-image: none;
+}
+
+body.grey .icon-grande {
+  // background-image: url($assetPathFontGrey);
+  background-image: none;
+}
+
+body.small-mode .btn-title {
+  font-size: 1.7rem; 
+}
+
+body.medium-mode .btn-title {
+  font-size: 2rem; 
+}
+
+body.big-mode .btn-title {
+  font-size: 2.3rem; 
 }

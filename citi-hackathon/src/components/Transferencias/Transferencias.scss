@@ -11,7 +11,7 @@
 }
 
 body.dark .container-transferencias{
-  background-color: $escala-grises-border;
+  background-color: $background-dark-mode;
 }
 
 body.grey .container-transferencias{
@@ -25,6 +25,19 @@ h2 {
   text-align: center;
   letter-spacing: 0.05em;
 }
+
+body.small-mode h2 {
+  font-size: 1.7rem; 
+}
+
+body.medium-mode h2 {
+  font-size: 2rem; 
+}
+
+body.big-mode h2 {
+  font-size: 2rem; 
+}
+
 body.grey h2 {
   color: $text-grey-mode;
 }
@@ -40,8 +53,6 @@ body.grey h2 {
   width: 70%;
   border-radius: 12px;
   height: 45%;
- 
-  
 }
 body.grey .info-container-transferencia{
   border: 2px solid $text-grey-mode;
@@ -59,26 +70,39 @@ p {
   font-size: 1.5rem;
   letter-spacing: 0.03em;
   text-align: start;
+  text-transform: uppercase;
 }
 body.grey p {
   color: $text-grey-mode;
 }
+body.small-mode p {
+  font-size: 1.7rem; 
+}
+
+body.medium-mode p {
+  font-size: 2rem; 
+}
+
+body.big-mode p {
+  font-size: 2rem; 
+}
 
 input {
   display: flex;
-  margin: 15px;
-  width: 85%;
+  margin: 15px 0px 15px;
+  width: 93%;
   height: 50px;
   font-size: 1.5rem;
   letter-spacing: 0.05em;
   text-indent: 14px;
   border-radius: 5px;
+  align-self: flex-start;
 }
 .botones {
   display: flex;
   padding: 15px;
   justify-content: space-evenly;
-  margin-bottom: 10px;
+  margin-bottom: 3rem;
 }
 .boton-confirmar {
   margin: 10px;
@@ -124,4 +148,7 @@ body.grey .boton-regresar {
   background-color: $background-grey-mode;
   color: $text-grey-mode;
   border-color: $text-grey-mode;
+}
+.voice{
+  display: flex;
 }
