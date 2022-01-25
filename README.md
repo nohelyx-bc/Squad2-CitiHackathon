@@ -52,3 +52,7 @@ Propuesta de diseño en escala de grises.
 Propuesta de diseño en modo oscuro.
 
 <img src="https://user-images.githubusercontent.com/7150868/150905937-6072aa98-73b9-43b6-aca4-45895faddcf5.png" alt="logo de citibanamex">
+
+#### 5. Especificaiones de uso
+
+Si se desea usar el asistente de voz y los comandos de voz es necesario que se consulte la pagina desde el navegador web google chrome.
