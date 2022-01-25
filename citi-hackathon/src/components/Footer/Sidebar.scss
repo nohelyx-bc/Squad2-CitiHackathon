@@ -1,3 +1,10 @@
+$assetPathWhite : "/assets/Logo-blanco.png";
+$assetPathGrey : "/assets/Logo-gris.png";
+$assetPathBlue : "/assets/Logo-azul.png";
+$assetPathFontGrey : "/assets/font-grey.png";
+$assetPathFontPred : "/assets/font-pred.png";
+$assetPathFontDark : "/assets/font-dark.png";
+
 * {
   margin: 0px;
   padding: 0px;
@@ -5,13 +12,35 @@
 
 #sidebar {
   // position: fixed;
-  border: 2px solid red;
-  width: 280px;
+  // border: 2px solid red;
+  width: 100%;
   height: 100vh;
   background: $secondary;
-  margin-top: -200%;
   transition: all 500ms linear;
-  position: relative;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+body.dark #sidebar {
+  background: $secondary-dark;
+}
+
+// body.grey #sidebar {
+
+  
+// }
+
+.close {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+}
+body.dark .close {
+  color: $primary-font-color;
 }
 
 #sidebar.active {
@@ -22,13 +51,26 @@
   list-style: none;
   padding: 15px 10px;
   text-align: center;
+  margin: 15px auto;
 }
 
 .logo {
   display: flex;
   width: 13rem;
-  height: auto;
+  height: 4rem;
+  padding-top: 2rem;
   justify-content: center;
+  background-image: url($assetPathBlue);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+body.dark .logo{
+  background-image: url($assetPathWhite);
+}
+body.grey .logo{
+  background-image: url($assetPathGrey);
 }
 
 #sidebar .toggle-btn {
@@ -59,6 +101,9 @@
   box-shadow: 6px 4px 4px $shadow-button;
   cursor:pointer;
 }
+body.dark .btn-oscuro {
+  box-shadow: none;
+}
 .btn-grises {
   font-weight: 600;
   margin: 15px;
@@ -74,6 +119,9 @@
   box-shadow: 6px 4px 4px $shadow-button;
   cursor:pointer;
 }
+body.dark .btn-grises {
+  box-shadow: none;
+}
 .btn-title {
   display: flex;
   justify-content: center;
@@ -81,6 +129,9 @@
   font-size: 1.3rem;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
+}
+body.dark .btn-title {
+  color: #AAAAAA;
 }
 .btn-predefinida {
   font-weight: 600;
@@ -95,6 +146,9 @@
   border-radius: 10px;
   box-shadow: 6px 4px 4px $shadow-button;
   cursor:pointer;
+}
+body.dark .btn-predefinida {
+  box-shadow: 2px 2px 2px $background-dark-mode;
 }
 .center-item {
  display:flex;
@@ -113,18 +167,75 @@
   width: 3.5rem;
   display: flex;
   justify-content: space-evenly;
+  cursor: pointer;
+  background-image: url($assetPathFontPred);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
+
+body.dark .icon-pequeño {
+  // background-image: url($assetPathFontDark);
+  background-image: none;
+}
+
+body.grey .icon-pequeño {
+  // background-image: url($assetPathFontGrey);
+  background-image: none;
+}
+
 .icon-mediano{
   margin: 5px;
   height: 4rem;
   width: 4rem;
   display: flex;
   justify-content: space-evenly;
+  cursor: pointer;
+  background-image: url($assetPathFontPred);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
+body.dark .icon-mediano {
+  // background-image: url($assetPathFontDark);
+  background-image: none;
+}
+
+body.grey .icon-mediano {
+  // background-image: url($assetPathFontGrey);
+  background-image: none;
+}
+
 .icon-grande{
   margin: 5px;
   height: 4.5rem;
   width: 4.5rem;
   display: flex;
   justify-content: space-evenly;
+  cursor: pointer;
+  background-image: url($assetPathFontPred);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+body.dark .icon-grande {
+  background-image: url($assetPathFontDark);
+  background-image: none;
+}
+
+body.grey .icon-grande {
+  // background-image: url($assetPathFontGrey);
+  background-image: none;
+}
+
+body.small-mode .btn-title {
+  font-size: 1.7rem; 
+}
+
+body.medium-mode .btn-title {
+  font-size: 2rem; 
+}
+
+body.big-mode .btn-title {
+  font-size: 2.3rem; 
 }

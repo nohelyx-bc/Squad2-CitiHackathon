@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-const PrincipalVista = (propsUser) => {
+const PrincipalVista = (propsUser, {fontSize}) => {
 
   console.log("estoy en principal vista", propsUser.userInfo)
   // console.log(propsUser.userInfo.id)
@@ -24,6 +24,9 @@ const PrincipalVista = (propsUser) => {
         })} */}
 
       <h2 className="titulos-predeterminado">BIENVENIDO</h2>
+      <h3 style={{
+          fontSize: `${fontSize}px`
+        }} className="titulos-predeterminado">{propsUser.userInfo.nombre_titular}</h3>
       <h3>{propsUser.userInfo.nombre_titular}</h3>
       <section className="container-botones-principal">
         <button className="boton-confirmar-principal"  onClick={handleTransferencias} >TRANSFERENCIA</button>
@@ -34,11 +37,17 @@ const PrincipalVista = (propsUser) => {
            
           return (
             <div key={val.id} className="border">
+              <section className="content-items">
+              <p style={{
+          fontSize: `${fontSize}px`
+        }}>{val.tipo_tarjeta}</p>
               <section>
-              <p>{val.tipo_tarjeta}</p>
-              <section>
-                <p>***{val.numero_cuenta.slice(12,16)}</p>
-                <p>$ {val.saldo} mxp</p>
+                <p style={{
+          fontSize: `${fontSize}px`
+        }}>***{val.numero_cuenta.slice(12,16)}</p>
+                <p style={{
+          fontSize: `${fontSize}px`
+        }}>$ {val.saldo} mxp</p>
               </section>
 
             </section>

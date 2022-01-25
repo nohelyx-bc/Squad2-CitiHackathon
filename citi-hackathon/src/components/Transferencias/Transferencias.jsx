@@ -1,9 +1,10 @@
 /* eslint-disable no-unused-vars */
-import React, { useEffect, useState } from "react";
+import React, {  useState } from "react";
 import { helpHttp } from "../../helpers/helpHttp";
 import { useNavigate } from "react-router-dom";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
+import Sidebar from "../Footer/Sidebar";
 import ConfirmacionTransferencia from "../ConfirmacionTransferencia";
 
 const Transferencias = ({ dataUser ,onAdd, validacionImporte, dataBeneficiarios }) => {
@@ -14,7 +15,7 @@ const Transferencias = ({ dataUser ,onAdd, validacionImporte, dataBeneficiarios 
   const [beneficiarioState, setbeneficiario] = useState({});
   const [origenState, setTarjetaOrigen] = useState({});
   const [saldoState, setSaldo] = useState({});
- 
+  const [open, setOpen] = useState(false);
 
   const navigate = useNavigate();
   const handleConfirmar = () => {navigate("/Confirmar"); };
@@ -37,6 +38,7 @@ const Transferencias = ({ dataUser ,onAdd, validacionImporte, dataBeneficiarios 
         <Header />
         <h2>TRANSFERENCIA</h2>
         <form
+        //className="info-container-transferencia"
           onSubmit={(e) => {
             e.preventDefault();
             validacionImporte(importe, beneficiario, concepto).then((res)=>{
@@ -116,7 +118,8 @@ const Transferencias = ({ dataUser ,onAdd, validacionImporte, dataBeneficiarios 
         </form>
         
       </div>
-      <Footer />
+      <Footer setOpen={setOpen}/>
+      <Sidebar open={open} setOpen={setOpen}/>
     </>
   );
 };

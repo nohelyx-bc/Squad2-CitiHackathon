@@ -3,16 +3,53 @@ h3,h4 {
   text-align: center;
   color: $primary-font-color;
   font-family: $primary-font;
+  letter-spacing: 0.03em;
+  line-height: 2em;
+  padding: 0.5rem 0 0.5rem 0;
+  text-transform: uppercase;
+}
+body.grey h3 {
+  color: $text-grey-mode;
+}
+body.grey h4 {
+  color: $text-grey-mode;
+
+}
+body.small-mode h3 {
+  font-size: 1.7rem; 
+}
+
+body.medium-mode h3 {
+  font-size: 2rem; 
+  line-height: 1.5em; 
+}
+
+body.big-mode h3 {
+  font-size: 2rem;
+  line-height: 1.5em; 
+}
+body.small-mode h4 {
+  font-size: 1.7rem; 
+}
+
+body.medium-mode h4 {
+  font-size: 2rem; 
+}
+
+body.big-mode h4 {
+  font-size: 2rem; 
 }
 .container-botones-principal {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 93%;
 }
 .boton-confirmar-principal {
   margin: 10px;
-  width: 90%;
+  width: 95%;
   padding: 5px 5px;
+  font-weight: 600;
   font-size: 1.5rem;
   letter-spacing: 0.05em;
   color: $font-color-button;
@@ -21,7 +58,10 @@ h3,h4 {
   border-color: $border-color-primary;
   box-shadow: 6px 4px 4px $shadow-button;
   cursor: pointer;
-  height: 10vh;
+  height: 15vh;
+}
+body.small-mode .boton-confirmar-principal {
+  font-size: 1.7rem; 
 }
 
 .border{
@@ -36,3 +76,77 @@ h3,h4 {
   height: 50%;
   align-items: center;
 }
+
+body.medium-mode .boton-confirmar-principal {
+  font-size: 2rem;
+  height: 14vh;
+}
+
+body.big-mode .boton-confirmar-principal {
+  font-size: 2rem; 
+  height: 18vh;
+}
+body.grey .boton-confirmar-principal {
+  background-color: $background-grey-mode;
+  border: 2px solid $text-grey-mode;
+  color: $text-grey-mode;
+}
+body.dark .boton-confirmar-principal {
+  background-color: $escala-grises-border;
+}
+
+.info-container-principal {
+    display: flex;
+    border-radius: 10px;
+    flex-direction: column;
+    background-color: $primary;
+    border: 1px solid $border-div-ligth;
+    padding: 2rem;
+    margin: 1.8rem;
+    border-radius: 12px;
+    height: 50%;
+    align-items: center;
+    width: 67vw;
+    
+  }
+
+  main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+body.grey .info-container-principal {
+    background-color: $background-grey-mode;
+    border: 2px solid $text-grey-mode;
+}
+// body.dark .info-container-principal {
+//   background-color: $escala-grises-border;
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

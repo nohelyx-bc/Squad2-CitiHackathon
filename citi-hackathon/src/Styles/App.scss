@@ -3,7 +3,23 @@
   background-color: $primary ;
   min-height: 100vh;
 }
+
+body.grey .container-predeterminado {
+  background-color: $primary ;
+}
+
+body.dark .container-predeterminado {
+  background-color: $background-dark-mode ;
+}
+
 #root{
   padding: 0;
   margin: 0;
+}
+:root {
+  --font-size: 1;
+}
+
+body {
+  font-size: calc(var(--font-size) * 1em);
 }

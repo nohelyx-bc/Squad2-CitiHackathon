@@ -2,8 +2,10 @@ import React, {useState} from "react";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import { useNavigate } from 'react-router-dom';
+import Sidebar from "../Footer/Sidebar";
 
-const AltaBeneficiario = ({addBeneficiary}) => {
+const AltaBeneficiario = ({addBeneficiary, fontSize}) => {
+  const [open, setOpen] = useState(false);
   const navigate = useNavigate();
   
   const [tipoCuentaState, setTipoCuenta] = useState({});
@@ -31,7 +33,7 @@ const AltaBeneficiario = ({addBeneficiary}) => {
     <>
       <div className="container-transferencias">
         <Header />
-        {/* <h2>HOLA USER!</h2> */}
+        <h2 style={{fontSize: `${fontSize}px`}}>HOLA </h2>
         <legend className="AltaBeneficiario-legend">
             AGREGAR CUENTAS A TERCEROS
           </legend>
@@ -77,7 +79,7 @@ const AltaBeneficiario = ({addBeneficiary}) => {
 {/* <input
             type="submit"
             name="submit"
-            value="Guardar"
+            value="CONFIRMAR"
             className="boton-guardar"
             onSubmit={(e) => {
               e.preventDefault();
@@ -94,7 +96,8 @@ const AltaBeneficiario = ({addBeneficiary}) => {
               handleTransferencia()
           }} >GUARDAR</button>
       </div>
-      <Footer />
+      <Footer setOpen={setOpen}/>
+      <Sidebar open={open} setOpen={setOpen}/>
     </>
   );
 };

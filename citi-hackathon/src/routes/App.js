@@ -9,6 +9,7 @@ import ConfirmacionTransferencia from '../components/ConfirmacionTransferencia';
 import Header from '../components/Header/Header';
 import Footer from '../components/Footer/Footer';
 import { DataIteration } from "../components/Home/DataIteration";
+import VoiceAssistant from "../components/VoiceAssistant";
 
 const App  = () => {
   
@@ -158,6 +159,7 @@ const validacionImporte= async (importe,beneficiario, concepto)=>{
         <Route exact path="/Header" element={<Header />} />
         <Route exact path="/Footer" element={<Footer />} />
         <Route exact path="/Sidebar" element={<Sidebar />} />
+        <Route exact path="/VoiceAssistant" element={<VoiceAssistant />} />
       </Routes>
     </Router>
   );

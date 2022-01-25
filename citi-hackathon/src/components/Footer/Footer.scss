@@ -1,7 +1,14 @@
 @import "../../Styles/variables";
+$assetPathAccess : "/assets/Access-white.png";
+$assetPathVoice : "/assets/Voice.png";
+$assetPathFont : "/assets/Font.png";
+$assetPathAccessGrey : "/assets/Access-grey.png";
+$assetPathVoiceGrey : "/assets/Voice-grey.png";
+$assetPathFontGrey : "/assets/font-grey.png";
+
 footer{
 display: flex;
-background-color: $primary-dark;
+background-color: $primary-light;
 justify-content: space-around;
 height: 4rem;
 border-top: 1px solid $border-div-ligth;
@@ -10,10 +17,51 @@ bottom: 0;
 width: 100%;
 // position: sticky;
 }
-.icon-footer{
+.icon-footer-access {
 margin: 5px;
 height: 3.5rem;
 width: 3.5rem;
 display: flex;
 justify-content: space-evenly;
+cursor: pointer;
+background-image: url($assetPathAccess);
+background-size: cover;
 } 
+
+.icon-footer-voice {
+  margin: 5px;
+  height: 3.5rem;
+  width: 3.5rem;
+  display: flex;
+  justify-content: space-evenly;
+  background-image: url($assetPathVoice);
+  background-size: cover;
+  } 
+
+.icon-footer-font{
+    margin: 5px;
+    height: 3.5rem;
+    width: 3.5rem;
+    display: flex;
+    justify-content: space-evenly;
+    background-image: url($assetPathFont);
+    background-size: cover;
+  } 
+
+  body.dark footer{
+  background-color: $escala-grises-border;
+  }
+  body.grey footer{
+  background-color: #AAAAAA;
+  border: 2px solid #373737;
+}
+
+body.grey .icon-footer-access {
+  background-image: url($assetPathAccessGrey);
+}
+body.grey .icon-footer-voice {
+  background-image: url($assetPathVoiceGrey);
+}
+body.grey .icon-footer-font {
+  background-image: url($assetPathFontGrey);
+}
