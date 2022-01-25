@@ -12,7 +12,7 @@
 * [1. Preámbulo](#1-preámbulo)
 * [2. Resumen del proyecto](#2-resumen-del-proyecto)
 * [3. Historias de Usuarios](#3-historias-de-diseño)
-* [4. Prototipos de diseño] (#4-prototipos-de-diseño)
+* [4. Prototipos] (#4-prototipos)
 
 #### 1. Preámbulo
 
@@ -37,7 +37,7 @@ Se trabajó a través de historias de usuario para manejar la funcionalidad del 
 - Yo como cliente con discapacidad visual, quiero un comprobante de transacción exitosa para tener como evidencia que se realizó la transacción.
   - DoD: Datos en comprobante Monto, número de cuenta origen, estatus de transacción (exitosa o rechazada), fecha, hora y número de autorización 
 
-#### 4. Protoripos de diseño
+#### 4. Prototipos
 
 Propuesta de diseño predeterminado.
 
