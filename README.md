@@ -11,14 +11,14 @@
 
 * [1. Preámbulo](#1-preámbulo)
 * [2. Resumen del proyecto](#2-resumen-del-proyecto)
-* [3. Historias de Usuarios](#3-historias-de-diseño)
-* [4. Prototipos] (#4-prototipos)
+* [3. Historias de Usuarios](#3-historias-de-usuario)
+* [4. Prototipos](#4-prototipos)
 
 #### 1. Preámbulo
 
 Con el objetivo de buscar la inclusividad y la accesibilidad digital se planteó un reto donde todos los clientes de _Citibanamex_ se sientan cómodos al usar la interfaz del banco y tengan una buena experiencia al realizar algo tan sencillo y cotidiano como una transferencia. En específico, se llevó a cabo una solución adaptada para personas que presenten discapacidad visual o baja visión.
 
-En la actualidad, no muchas aplicaciones presentan las normas adecuadas para que sean accesibles para las minorías entre sus usuarios, ya que aproximadamente el 47% de las apps no presentan pautas establecidas en cuanto a inclusividad. 
+En la actualidad, no muchas aplicaciones presentan las normas adecuadas para que sean accesibles para usuarios con necesidades adicionales a la media, ya que aproximadamente el 47% de las apps no presentan pautas establecidas en cuanto a inclusividad. 
 
 #### 2. Resumen del Proyecto
 
@@ -26,7 +26,7 @@ En la actualidad, no muchas aplicaciones presentan las normas adecuadas para que
 
 #### 3. Historias de Usuario
 
-Se trabajó a través de historias de usuario para manejar la funcionalidad del proyecto, las cuales fueron:
+Se trabajó a través de historias de usuario para manejar la funcionalidad del proyecto, las cuales fueron proporcionadas por el equipo de _Citibanamex_ y fueron las siguientes:
 
 - Yo como cliente con discapacidad visual, quiero dar de alta una cuenta para transferirle dinero desde mis cuentas.
   - DoD: Contiene tipo de cuenta, número de cuenta, nombre de titular y monto máximo a transferir.
