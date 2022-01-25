@@ -55,4 +55,7 @@ Propuesta de diseño en modo oscuro.
 
 #### 5. Especificaciones de uso
 
-Si se desea usar el asistente de voz y los comandos de voz es necesario que se consulte la pagina desde el navegador web google chrome.
+Si se desea usar el asistente de voz y los comandos de voz es necesario que se consulte la pagina desde el navegador web google chrome y active el asistente de voz de su dispositivo.
+
+#### 6. Des
+Enlace despliegue: https://citibanamex-50871.web.app/
