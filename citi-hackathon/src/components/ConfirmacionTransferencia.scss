@@ -1,0 +1,93 @@
+.container-transferencias {
+  display: flex;
+  font-family: $primary-font;
+  background-color: $primary;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+}
+h2 {
+  color: $primary-font-color;
+  font-family: $primary-font;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+.info-container {
+  display: flex;
+  border-radius: 10px;
+  flex-direction: column;
+  background-color: $primary-content-color;
+  border: 1px solid $border-div-ligth;
+  padding: 2rem;
+  margin: 1rem;
+  width: 76%;
+  border-radius: 12px;
+  height: 80%;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+body.grey .info-container {
+  border: 3px solid $escala-grises-font-button;
+}
+
+.info-cuenta-origen {
+  display: flex;
+  flex-direction: column;
+}
+// p {
+//   color: $secondary-font-color;
+//   font-family: $primary-font;
+//   font-size: 1.3rem;
+//   letter-spacing: 0.05em;
+//   line-height: 4rem;
+//   text-align: start;
+// }
+p {
+  color: $secondary-font-color;
+  font-family: $primary-font;
+  font-size: 1.4rem;
+  letter-spacing: 0.05em;
+  line-height: 2.3rem;
+  text-align: start;
+  font-weight: 900;
+}
+
+
+.botones {
+  display: flex;
+  padding: 15px;
+  justify-content: space-evenly;
+}
+.boton-confirmar {
+  margin: 10px;
+  width: fit-content;
+  padding: 5px 5px;
+  font-size: 1.5rem;
+  letter-spacing: 0.05em;
+  color: $font-color-button;
+  background-color: $color-secondary-button;
+  border-radius: 10px;
+  border-color: $border-color-primary;
+  box-shadow: 6px 4px 4px $shadow-button;
+  cursor: pointer;
+}
+.boton-regresar {
+  margin: 10px;
+  width: fit-content;
+  padding: 5px 5px;
+  height: 57px;
+  font-size: 1.5rem;
+  letter-spacing: 0.05em;
+  color: $font-color-button;
+  background-color: $color-primary-button;
+  border-radius: 10px;
+  border-color: $border-color-primary;
+  box-shadow: 6px 4px 4px $shadow-button;
+  cursor: pointer;
+}
+.space-parrafos {
+  padding: 1rem;
+}

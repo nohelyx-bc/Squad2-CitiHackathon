@@ -1,7 +1,14 @@
 @import "../../Styles/variables";
 .render{
-    min-height: 81vh;
-    background-color: $primary;
-    padding: 0;
-    margin: 0;
+
+    // background-color: $primary;
+    padding-top: 1.5vh;
+    // margin-top: 1.5vh;
+    min-height: 100vh;
 }
+// body.dark .render{
+//     background-color: $background-dark-mode;
+//   }
+  body.grey .render{
+    background-color: $background-grey-mode;
+  }
